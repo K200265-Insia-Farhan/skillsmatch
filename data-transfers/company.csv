@@ -1,0 +1,501 @@
+company_id,company_name,companyHR_id,company_location,company_email,company_website
+1,DataRangers,1,Faisalabad,datarangers@example.com,datarangers.com
+2,DataLogic,2,Gujranwala,datalogic@example.com,datalogic.com
+3,InnoWorks Solutions,3,Quetta,innoworkssolutions@example.com,innoworkssolutions.com
+4,CyberTech Solutions,4,Faisalabad,cybertechsolutions@example.com,cybertechsolutions.com
+5,InfoNest Technologies,5,Faisalabad,infonesttechnologies@example.com,infonesttechnologies.com
+6,WebSphere,6,Bahawalpur,websphere@example.com,websphere.com
+7,CodeWave Solutions,7,Abbottabad,codewavesolutions@example.com,codewavesolutions.com
+8,WebMatrix,8,Sialkot,webmatrix@example.com,webmatrix.com
+9,CloudSphere Systems,9,Quetta,cloudspheresystems@example.com,cloudspheresystems.com
+10,WebEdge,10,Abbottabad,webedge@example.com,webedge.com
+11,TechForge,11,Hyderabad,techforge@example.com,techforge.com
+12,TechBurst,12,Abbottabad,techburst@example.com,techburst.com
+13,CyberTech Solutions,13,Sukkur,cybertechsolutions@example.com,cybertechsolutions.com
+14,TechForge Innovations,14,Rawalpindi,techforgeinnovations@example.com,techforgeinnovations.com
+15,InfoCraft,15,Sukkur,infocraft@example.com,infocraft.com
+16,InfoWorks Co.,16,Karachi,infoworksco.@example.com,infoworksco..com
+17,TechBurst,17,Hyderabad,techburst@example.com,techburst.com
+18,CodeSphere Innovations,18,Multan,codesphereinnovations@example.com,codesphereinnovations.com
+19,NetGenius Technologies,19,Gujranwala,netgeniustechnologies@example.com,netgeniustechnologies.com
+20,CodeCloud Solutions,20,Bahawalpur,codecloudsolutions@example.com,codecloudsolutions.com
+21,CodeCrafters,21,Rawalpindi,codecrafters@example.com,codecrafters.com
+22,CyberSolutions,22,Nawabshah,cybersolutions@example.com,cybersolutions.com
+23,InfoSphere Innovations,23,Islamabad,infosphereinnovations@example.com,infosphereinnovations.com
+24,CodeSavvy Solutions,24,Rawalpindi,codesavvysolutions@example.com,codesavvysolutions.com
+25,TechStorm,25,Nawabshah,techstorm@example.com,techstorm.com
+26,CyberVerse,26,Nawabshah,cyberverse@example.com,cyberverse.com
+27,InnoCraft,27,Abbottabad,innocraft@example.com,innocraft.com
+28,DataStorm Co.,28,Rawalpindi,datastormco.@example.com,datastormco..com
+29,DataCloud Innovations,29,Rawalpindi,datacloudinnovations@example.com,datacloudinnovations.com
+30,DataStream Innovations,30,Sukkur,datastreaminnovations@example.com,datastreaminnovations.com
+31,CloudEdge Innovations,31,Gujranwala,cloudedgeinnovations@example.com,cloudedgeinnovations.com
+32,TechFusion,32,Peshawar,techfusion@example.com,techfusion.com
+33,InnoGenius,33,Nawabshah,innogenius@example.com,innogenius.com
+34,TechNest Innovations,34,Peshawar,technestinnovations@example.com,technestinnovations.com
+35,DataDynamix,35,Islamabad,datadynamix@example.com,datadynamix.com
+36,InnoStream Co.,36,Rawalpindi,innostreamco.@example.com,innostreamco..com
+37,ByteStorm,37,Nawabshah,bytestorm@example.com,bytestorm.com
+38,InfoStream Innovations,38,Sialkot,infostreaminnovations@example.com,infostreaminnovations.com
+39,WebCrafters Co.,39,Nawabshah,webcraftersco.@example.com,webcraftersco..com
+40,DataCraft,40,Multan,datacraft@example.com,datacraft.com
+41,InnoGenius,41,Peshawar,innogenius@example.com,innogenius.com
+42,WebWeavers,42,Nawabshah,webweavers@example.com,webweavers.com
+43,CloudSavvy,43,Gujranwala,cloudsavvy@example.com,cloudsavvy.com
+44,InfoCraft Co.,44,Rawalpindi,infocraftco.@example.com,infocraftco..com
+45,DataStream Co.,45,Lahore,datastreamco.@example.com,datastreamco..com
+46,InnoStream,46,Sialkot,innostream@example.com,innostream.com
+47,WebWorks,47,Islamabad,webworks@example.com,webworks.com
+48,InnoWare Innovations,48,Abbottabad,innowareinnovations@example.com,innowareinnovations.com
+49,ByteForge Technologies,49,Nawabshah,byteforgetechnologies@example.com,byteforgetechnologies.com
+50,CloudSphere,50,Bahawalpur,cloudsphere@example.com,cloudsphere.com
+51,TechMatrix,51,Bahawalpur,techmatrix@example.com,techmatrix.com
+52,CyberMatrix Solutions,52,Nawabshah,cybermatrixsolutions@example.com,cybermatrixsolutions.com
+53,WebWise Solutions,53,Nawabshah,webwisesolutions@example.com,webwisesolutions.com
+54,InfoCloud Co.,54,Nawabshah,infocloudco.@example.com,infocloudco..com
+55,WebEdge,55,Nawabshah,webedge@example.com,webedge.com
+56,DataCompass Solutions,56,Lahore,datacompasssolutions@example.com,datacompasssolutions.com
+57,InnoWare Solutions,57,Sialkot,innowaresolutions@example.com,innowaresolutions.com
+58,CodeCloud Solutions,58,Islamabad,codecloudsolutions@example.com,codecloudsolutions.com
+59,ByteSolutions,59,Bahawalpur,bytesolutions@example.com,bytesolutions.com
+60,WebGenius,60,Sukkur,webgenius@example.com,webgenius.com
+61,DataCloud Innovations,61,Nawabshah,datacloudinnovations@example.com,datacloudinnovations.com
+62,CodeNest Co.,62,Sukkur,codenestco.@example.com,codenestco..com
+63,CyberMatrix Innovations,63,Sukkur,cybermatrixinnovations@example.com,cybermatrixinnovations.com
+64,InfoMatrix Systems,64,Sialkot,infomatrixsystems@example.com,infomatrixsystems.com
+65,CloudTech Solutions,65,Faisalabad,cloudtechsolutions@example.com,cloudtechsolutions.com
+66,WebTech Innovations,66,Sialkot,webtechinnovations@example.com,webtechinnovations.com
+67,CloudSphere Solutions,67,Hyderabad,cloudspheresolutions@example.com,cloudspheresolutions.com
+68,CloudGenius,68,Abbottabad,cloudgenius@example.com,cloudgenius.com
+69,WebMatrix,69,Rawalpindi,webmatrix@example.com,webmatrix.com
+70,CodeSavvy,70,Rawalpindi,codesavvy@example.com,codesavvy.com
+71,InfoGenius Systems,71,Karachi,infogeniussystems@example.com,infogeniussystems.com
+72,TechLogic,72,Bahawalpur,techlogic@example.com,techlogic.com
+73,CyberMatrix,73,Islamabad,cybermatrix@example.com,cybermatrix.com
+74,ByteWorks Co.,74,Rawalpindi,byteworksco.@example.com,byteworksco..com
+75,TechForge Solutions,75,Abbottabad,techforgesolutions@example.com,techforgesolutions.com
+76,ByteGenix,76,Rawalpindi,bytegenix@example.com,bytegenix.com
+77,CloudLogic,77,Rawalpindi,cloudlogic@example.com,cloudlogic.com
+78,TechMatrix,78,Karachi,techmatrix@example.com,techmatrix.com
+79,ByteGenix,79,Bahawalpur,bytegenix@example.com,bytegenix.com
+80,WebSphere Innovations,80,Multan,websphereinnovations@example.com,websphereinnovations.com
+81,InfoNinja Systems,81,Lahore,infoninjasystems@example.com,infoninjasystems.com
+82,CodeSavvy,82,Peshawar,codesavvy@example.com,codesavvy.com
+83,WebSphere Innovations,83,Sukkur,websphereinnovations@example.com,websphereinnovations.com
+84,TechEdge Co.,84,Peshawar,techedgeco.@example.com,techedgeco..com
+85,CyberForge Solutions,85,Nawabshah,cyberforgesolutions@example.com,cyberforgesolutions.com
+86,WebLogic,86,Karachi,weblogic@example.com,weblogic.com
+87,TechForge,87,Karachi,techforge@example.com,techforge.com
+88,NetCraft Innovations,88,Islamabad,netcraftinnovations@example.com,netcraftinnovations.com
+89,WebWizard Solutions,89,Peshawar,webwizardsolutions@example.com,webwizardsolutions.com
+90,InfoGenius Systems,90,Rawalpindi,infogeniussystems@example.com,infogeniussystems.com
+91,CyberMatrix Solutions,91,Multan,cybermatrixsolutions@example.com,cybermatrixsolutions.com
+92,CyberStorm Technologies,92,Hyderabad,cyberstormtechnologies@example.com,cyberstormtechnologies.com
+93,CloudWorks,93,Bahawalpur,cloudworks@example.com,cloudworks.com
+94,InfoCloud Co.,94,Faisalabad,infocloudco.@example.com,infocloudco..com
+95,CloudStorm Solutions,95,Islamabad,cloudstormsolutions@example.com,cloudstormsolutions.com
+96,ByteWorks Co.,96,Karachi,byteworksco.@example.com,byteworksco..com
+97,ByteWorks,97,Hyderabad,byteworks@example.com,byteworks.com
+98,DataGenius Co.,98,Gujranwala,datageniusco.@example.com,datageniusco..com
+99,ByteEdge,99,Karachi,byteedge@example.com,byteedge.com
+100,CloudEdge Solutions,100,Bahawalpur,cloudedgesolutions@example.com,cloudedgesolutions.com
+101,NetPulse Innovations,101,Islamabad,netpulseinnovations@example.com,netpulseinnovations.com
+102,TechSavvy,102,Sialkot,techsavvy@example.com,techsavvy.com
+103,ByteTech,103,Hyderabad,bytetech@example.com,bytetech.com
+104,ByteWise Solutions,104,Peshawar,bytewisesolutions@example.com,bytewisesolutions.com
+105,CodeWise,105,Hyderabad,codewise@example.com,codewise.com
+106,WebCompass,106,Islamabad,webcompass@example.com,webcompass.com
+107,CyberMatrix,107,Faisalabad,cybermatrix@example.com,cybermatrix.com
+108,TechSavvy,108,Faisalabad,techsavvy@example.com,techsavvy.com
+109,TechMatrix Co.,109,Hyderabad,techmatrixco.@example.com,techmatrixco..com
+110,CodeLogic,110,Peshawar,codelogic@example.com,codelogic.com
+111,WebSphere Innovations,111,Sialkot,websphereinnovations@example.com,websphereinnovations.com
+112,TechVision,112,Quetta,techvision@example.com,techvision.com
+113,InnoGenius,113,Gujranwala,innogenius@example.com,innogenius.com
+114,InnoNest Technologies,114,Quetta,innonesttechnologies@example.com,innonesttechnologies.com
+115,DataCraft,115,Nawabshah,datacraft@example.com,datacraft.com
+116,CloudBurst Technologies,116,Peshawar,cloudbursttechnologies@example.com,cloudbursttechnologies.com
+117,TechWorks,117,Hyderabad,techworks@example.com,techworks.com
+118,CodeSphere Co.,118,Faisalabad,codesphereco.@example.com,codesphereco..com
+119,CloudWorks,119,Rawalpindi,cloudworks@example.com,cloudworks.com
+120,NetPulse Innovations,120,Karachi,netpulseinnovations@example.com,netpulseinnovations.com
+121,ByteEdge,121,Peshawar,byteedge@example.com,byteedge.com
+122,DataStream,122,Sialkot,datastream@example.com,datastream.com
+123,CodeCraft Solutions,123,Rawalpindi,codecraftsolutions@example.com,codecraftsolutions.com
+124,ByteWorks,124,Quetta,byteworks@example.com,byteworks.com
+125,NetWise Technologies,125,Karachi,netwisetechnologies@example.com,netwisetechnologies.com
+126,InfoWorks Co.,126,Nawabshah,infoworksco.@example.com,infoworksco..com
+127,CloudCompass,127,Hyderabad,cloudcompass@example.com,cloudcompass.com
+128,CyberEdge Innovations,128,Abbottabad,cyberedgeinnovations@example.com,cyberedgeinnovations.com
+129,ByteSphere,129,Hyderabad,bytesphere@example.com,bytesphere.com
+130,TechPulse,130,Gujranwala,techpulse@example.com,techpulse.com
+131,ByteSphere Systems,131,Islamabad,bytespheresystems@example.com,bytespheresystems.com
+132,ByteSphere,132,Karachi,bytesphere@example.com,bytesphere.com
+133,CodeCloud,133,Rawalpindi,codecloud@example.com,codecloud.com
+134,InnoSphere,134,Multan,innosphere@example.com,innosphere.com
+135,InnoSoft Technologies,135,Hyderabad,innosofttechnologies@example.com,innosofttechnologies.com
+136,InnoTech Innovations,136,Nawabshah,innotechinnovations@example.com,innotechinnovations.com
+137,InfoStream Innovations,137,Lahore,infostreaminnovations@example.com,infostreaminnovations.com
+138,CyberSphere,138,Nawabshah,cybersphere@example.com,cybersphere.com
+139,InfoSphere Innovations,139,Karachi,infosphereinnovations@example.com,infosphereinnovations.com
+140,InnoCloud,140,Faisalabad,innocloud@example.com,innocloud.com
+141,CyberWorks,141,Hyderabad,cyberworks@example.com,cyberworks.com
+142,CodeCraft Solutions,142,Lahore,codecraftsolutions@example.com,codecraftsolutions.com
+143,CloudForge,143,Sukkur,cloudforge@example.com,cloudforge.com
+144,TechSphere,144,Karachi,techsphere@example.com,techsphere.com
+145,CyberEdge,145,Nawabshah,cyberedge@example.com,cyberedge.com
+146,CyberVerse,146,Sialkot,cyberverse@example.com,cyberverse.com
+147,CyberMatrix Solutions,147,Nawabshah,cybermatrixsolutions@example.com,cybermatrixsolutions.com
+148,InnoWare Innovations,148,Faisalabad,innowareinnovations@example.com,innowareinnovations.com
+149,TechGenie,149,Abbottabad,techgenie@example.com,techgenie.com
+150,CyberMatrix Co.,150,Gujranwala,cybermatrixco.@example.com,cybermatrixco..com
+151,InnoWorks Solutions,151,Sialkot,innoworkssolutions@example.com,innoworkssolutions.com
+152,InfoTech,152,Quetta,infotech@example.com,infotech.com
+153,WebSphere Systems,153,Faisalabad,webspheresystems@example.com,webspheresystems.com
+154,CodeCraft Co.,154,Peshawar,codecraftco.@example.com,codecraftco..com
+155,InfoSphere,155,Hyderabad,infosphere@example.com,infosphere.com
+156,NetWorks Co.,156,Islamabad,networksco.@example.com,networksco..com
+157,NetVantage Technologies,157,Sukkur,netvantagetechnologies@example.com,netvantagetechnologies.com
+158,DataCompass Solutions,158,Peshawar,datacompasssolutions@example.com,datacompasssolutions.com
+159,CyberMatrix,159,Faisalabad,cybermatrix@example.com,cybermatrix.com
+160,NetWise Technologies,160,Hyderabad,netwisetechnologies@example.com,netwisetechnologies.com
+161,CloudSphere Systems,161,Quetta,cloudspheresystems@example.com,cloudspheresystems.com
+162,TechSphere Co.,162,Faisalabad,techsphereco.@example.com,techsphereco..com
+163,CyberNest Solutions,163,Abbottabad,cybernestsolutions@example.com,cybernestsolutions.com
+164,InnoSphere,164,Quetta,innosphere@example.com,innosphere.com
+165,TechPulse,165,Gujranwala,techpulse@example.com,techpulse.com
+166,CodeSphere Innovations,166,Faisalabad,codesphereinnovations@example.com,codesphereinnovations.com
+167,CyberMatrix,167,Multan,cybermatrix@example.com,cybermatrix.com
+168,ByteSolutions,168,Karachi,bytesolutions@example.com,bytesolutions.com
+169,InnoTech Innovations,169,Quetta,innotechinnovations@example.com,innotechinnovations.com
+170,InnoTech Solutions,170,Abbottabad,innotechsolutions@example.com,innotechsolutions.com
+171,ByteSavvy,171,Quetta,bytesavvy@example.com,bytesavvy.com
+172,CloudGenix,172,Lahore,cloudgenix@example.com,cloudgenix.com
+173,InfoSphere Innovations,173,Karachi,infosphereinnovations@example.com,infosphereinnovations.com
+174,CyberNet Solutions,174,Abbottabad,cybernetsolutions@example.com,cybernetsolutions.com
+175,NetCraft Innovations,175,Lahore,netcraftinnovations@example.com,netcraftinnovations.com
+176,CloudStorm Solutions,176,Rawalpindi,cloudstormsolutions@example.com,cloudstormsolutions.com
+177,ByteWise Solutions,177,Gujranwala,bytewisesolutions@example.com,bytewisesolutions.com
+178,DataPlex,178,Gujranwala,dataplex@example.com,dataplex.com
+179,ByteWorks,179,Islamabad,byteworks@example.com,byteworks.com
+180,NetStream Technologies,180,Faisalabad,netstreamtechnologies@example.com,netstreamtechnologies.com
+181,InfoNet Innovations,181,Sialkot,infonetinnovations@example.com,infonetinnovations.com
+182,DataGenix Solutions,182,Sialkot,datagenixsolutions@example.com,datagenixsolutions.com
+183,InnoWorks Solutions,183,Quetta,innoworkssolutions@example.com,innoworkssolutions.com
+184,ByteForge Technologies,184,Multan,byteforgetechnologies@example.com,byteforgetechnologies.com
+185,ByteSphere,185,Multan,bytesphere@example.com,bytesphere.com
+186,CloudLogic,186,Faisalabad,cloudlogic@example.com,cloudlogic.com
+187,InnoTech Co.,187,Peshawar,innotechco.@example.com,innotechco..com
+188,NetGenius Technologies,188,Nawabshah,netgeniustechnologies@example.com,netgeniustechnologies.com
+189,InnovaTech Solutions,189,Islamabad,innovatechsolutions@example.com,innovatechsolutions.com
+190,ByteSphere Solutions,190,Lahore,bytespheresolutions@example.com,bytespheresolutions.com
+191,CloudStream,191,Rawalpindi,cloudstream@example.com,cloudstream.com
+192,ByteGenix,192,Rawalpindi,bytegenix@example.com,bytegenix.com
+193,ByteEdge Technologies,193,Sialkot,byteedgetechnologies@example.com,byteedgetechnologies.com
+194,TechSphere Innovations,194,Gujranwala,techsphereinnovations@example.com,techsphereinnovations.com
+195,CodeNest Co.,195,Nawabshah,codenestco.@example.com,codenestco..com
+196,InnoStream,196,Rawalpindi,innostream@example.com,innostream.com
+197,WebSphere Co.,197,Sialkot,websphereco.@example.com,websphereco..com
+198,TechNest Innovations,198,Sukkur,technestinnovations@example.com,technestinnovations.com
+199,InfoNest Technologies,199,Sialkot,infonesttechnologies@example.com,infonesttechnologies.com
+200,InnoWorks Solutions,200,Faisalabad,innoworkssolutions@example.com,innoworkssolutions.com
+201,ByteWorks Innovations,201,Quetta,byteworksinnovations@example.com,byteworksinnovations.com
+202,NetMatrix Technologies,202,Islamabad,netmatrixtechnologies@example.com,netmatrixtechnologies.com
+203,InfoCloud Co.,203,Karachi,infocloudco.@example.com,infocloudco..com
+204,WebWizard Solutions,204,Rawalpindi,webwizardsolutions@example.com,webwizardsolutions.com
+205,ByteLogic,205,Nawabshah,bytelogic@example.com,bytelogic.com
+206,CyberForge Solutions,206,Sukkur,cyberforgesolutions@example.com,cyberforgesolutions.com
+207,CloudForge,207,Sukkur,cloudforge@example.com,cloudforge.com
+208,WebSphere Technologies,208,Rawalpindi,webspheretechnologies@example.com,webspheretechnologies.com
+209,ByteWorks,209,Abbottabad,byteworks@example.com,byteworks.com
+210,WebWorks Systems,210,Karachi,webworkssystems@example.com,webworkssystems.com
+211,ByteWorks Co.,211,Peshawar,byteworksco.@example.com,byteworksco..com
+212,TechBurst,212,Gujranwala,techburst@example.com,techburst.com
+213,WebLogic,213,Peshawar,weblogic@example.com,weblogic.com
+214,WebSphere Technologies,214,Nawabshah,webspheretechnologies@example.com,webspheretechnologies.com
+215,InnoStream,215,Quetta,innostream@example.com,innostream.com
+216,NetFusion Technologies,216,Sukkur,netfusiontechnologies@example.com,netfusiontechnologies.com
+217,CloudScape,217,Gujranwala,cloudscape@example.com,cloudscape.com
+218,DataStream Solutions,218,Quetta,datastreamsolutions@example.com,datastreamsolutions.com
+219,InfoSphere Innovations,219,Faisalabad,infosphereinnovations@example.com,infosphereinnovations.com
+220,WebLogic Innovations,220,Islamabad,weblogicinnovations@example.com,weblogicinnovations.com
+221,TechForge,221,Multan,techforge@example.com,techforge.com
+222,TechWave Innovations,222,Faisalabad,techwaveinnovations@example.com,techwaveinnovations.com
+223,ByteForge Technologies,223,Faisalabad,byteforgetechnologies@example.com,byteforgetechnologies.com
+224,TechCraft Solutions,224,Gujranwala,techcraftsolutions@example.com,techcraftsolutions.com
+225,DataDynamix,225,Nawabshah,datadynamix@example.com,datadynamix.com
+226,NetFusion Technologies,226,Faisalabad,netfusiontechnologies@example.com,netfusiontechnologies.com
+227,TechNest,227,Faisalabad,technest@example.com,technest.com
+228,InnoLogic Co.,228,Sukkur,innologicco.@example.com,innologicco..com
+229,ByteGenix,229,Islamabad,bytegenix@example.com,bytegenix.com
+230,DataNest Innovations,230,Hyderabad,datanestinnovations@example.com,datanestinnovations.com
+231,InnoWorks,231,Nawabshah,innoworks@example.com,innoworks.com
+232,CyberWise,232,Islamabad,cyberwise@example.com,cyberwise.com
+233,DataStream Technologies,233,Sialkot,datastreamtechnologies@example.com,datastreamtechnologies.com
+234,ByteStorm Solutions,234,Peshawar,bytestormsolutions@example.com,bytestormsolutions.com
+235,WebCrafters Co.,235,Lahore,webcraftersco.@example.com,webcraftersco..com
+236,DataGenius Co.,236,Faisalabad,datageniusco.@example.com,datageniusco..com
+237,TechSavvy Solutions,237,Islamabad,techsavvysolutions@example.com,techsavvysolutions.com
+238,InnoGenius,238,Hyderabad,innogenius@example.com,innogenius.com
+239,DataStream Innovations,239,Islamabad,datastreaminnovations@example.com,datastreaminnovations.com
+240,InnoNest Technologies,240,Faisalabad,innonesttechnologies@example.com,innonesttechnologies.com
+241,ByteSavvy,241,Sukkur,bytesavvy@example.com,bytesavvy.com
+242,WebMatrix,242,Gujranwala,webmatrix@example.com,webmatrix.com
+243,TechNest Innovations,243,Bahawalpur,technestinnovations@example.com,technestinnovations.com
+244,WebSphere Technologies,244,Quetta,webspheretechnologies@example.com,webspheretechnologies.com
+245,WebCrafters,245,Nawabshah,webcrafters@example.com,webcrafters.com
+246,TechSavvy Innovations,246,Gujranwala,techsavvyinnovations@example.com,techsavvyinnovations.com
+247,CloudLogic Systems,247,Abbottabad,cloudlogicsystems@example.com,cloudlogicsystems.com
+248,ByteWise Solutions,248,Peshawar,bytewisesolutions@example.com,bytewisesolutions.com
+249,NetStorm Technologies,249,Peshawar,netstormtechnologies@example.com,netstormtechnologies.com
+250,ByteCompass Innovations,250,Gujranwala,bytecompassinnovations@example.com,bytecompassinnovations.com
+251,DataStream Technologies,251,Rawalpindi,datastreamtechnologies@example.com,datastreamtechnologies.com
+252,CloudSavvy,252,Abbottabad,cloudsavvy@example.com,cloudsavvy.com
+253,NetForge Systems,253,Bahawalpur,netforgesystems@example.com,netforgesystems.com
+254,CyberTech Solutions,254,Gujranwala,cybertechsolutions@example.com,cybertechsolutions.com
+255,TechForge Innovations,255,Sukkur,techforgeinnovations@example.com,techforgeinnovations.com
+256,NetForge Co.,256,Sialkot,netforgeco.@example.com,netforgeco..com
+257,DataPlex,257,Lahore,dataplex@example.com,dataplex.com
+258,InnoTech Solutions,258,Karachi,innotechsolutions@example.com,innotechsolutions.com
+259,NetCraft Innovations,259,Sukkur,netcraftinnovations@example.com,netcraftinnovations.com
+260,CloudGenix,260,Nawabshah,cloudgenix@example.com,cloudgenix.com
+261,WebWise Solutions,261,Hyderabad,webwisesolutions@example.com,webwisesolutions.com
+262,WebGenius Innovations,262,Sukkur,webgeniusinnovations@example.com,webgeniusinnovations.com
+263,DataCrafters,263,Sialkot,datacrafters@example.com,datacrafters.com
+264,CodeCraft Solutions,264,Sukkur,codecraftsolutions@example.com,codecraftsolutions.com
+265,CodeMaster Systems,265,Rawalpindi,codemastersystems@example.com,codemastersystems.com
+266,CyberStream,266,Hyderabad,cyberstream@example.com,cyberstream.com
+267,CyberSolutions,267,Hyderabad,cybersolutions@example.com,cybersolutions.com
+268,NetSavvy,268,Quetta,netsavvy@example.com,netsavvy.com
+269,CodeSavvy,269,Faisalabad,codesavvy@example.com,codesavvy.com
+270,DataSphere,270,Hyderabad,datasphere@example.com,datasphere.com
+271,DataFusion Co.,271,Sukkur,datafusionco.@example.com,datafusionco..com
+272,DataStream,272,Lahore,datastream@example.com,datastream.com
+273,NetWise Technologies,273,Islamabad,netwisetechnologies@example.com,netwisetechnologies.com
+274,Innovative Solutions Co.,274,Multan,innovativesolutionsco.@example.com,innovativesolutionsco..com
+275,TechStorm,275,Multan,techstorm@example.com,techstorm.com
+276,TechNest Innovations,276,Gujranwala,technestinnovations@example.com,technestinnovations.com
+277,CloudNinja,277,Gujranwala,cloudninja@example.com,cloudninja.com
+278,CloudLogic Systems,278,Sialkot,cloudlogicsystems@example.com,cloudlogicsystems.com
+279,WebCompass,279,Rawalpindi,webcompass@example.com,webcompass.com
+280,TechLogic,280,Rawalpindi,techlogic@example.com,techlogic.com
+281,ByteSavvy,281,Islamabad,bytesavvy@example.com,bytesavvy.com
+282,DataCraft,282,Sialkot,datacraft@example.com,datacraft.com
+283,DataCompass Solutions,283,Peshawar,datacompasssolutions@example.com,datacompasssolutions.com
+284,WebCompass,284,Sukkur,webcompass@example.com,webcompass.com
+285,InnoSoft Technologies,285,Sukkur,innosofttechnologies@example.com,innosofttechnologies.com
+286,WebSphere Systems,286,Peshawar,webspheresystems@example.com,webspheresystems.com
+287,InnoSphere Co.,287,Peshawar,innosphereco.@example.com,innosphereco..com
+288,ByteLogic Co.,288,Islamabad,bytelogicco.@example.com,bytelogicco..com
+289,NetSphere Technologies,289,Multan,netspheretechnologies@example.com,netspheretechnologies.com
+290,ByteSavvy,290,Multan,bytesavvy@example.com,bytesavvy.com
+291,WebSphere,291,Nawabshah,websphere@example.com,websphere.com
+292,NetLogic Systems,292,Abbottabad,netlogicsystems@example.com,netlogicsystems.com
+293,CodeWave Solutions,293,Peshawar,codewavesolutions@example.com,codewavesolutions.com
+294,ByteStorm Solutions,294,Quetta,bytestormsolutions@example.com,bytestormsolutions.com
+295,CloudGenius,295,Karachi,cloudgenius@example.com,cloudgenius.com
+296,CodeWise,296,Karachi,codewise@example.com,codewise.com
+297,CodeNest Co.,297,Abbottabad,codenestco.@example.com,codenestco..com
+298,CodeCrafters,298,Sukkur,codecrafters@example.com,codecrafters.com
+299,CyberVerse,299,Abbottabad,cyberverse@example.com,cyberverse.com
+300,CyberTech Solutions,300,Islamabad,cybertechsolutions@example.com,cybertechsolutions.com
+301,ByteBay Solutions,301,Lahore,bytebaysolutions@example.com,bytebaysolutions.com
+302,ByteWorks,302,Peshawar,byteworks@example.com,byteworks.com
+303,ByteSavvy,303,Rawalpindi,bytesavvy@example.com,bytesavvy.com
+304,InnoWare Innovations,304,Bahawalpur,innowareinnovations@example.com,innowareinnovations.com
+305,TechStorm,305,Sialkot,techstorm@example.com,techstorm.com
+306,CyberSphere Innovations,306,Sukkur,cybersphereinnovations@example.com,cybersphereinnovations.com
+307,DataStream Co.,307,Hyderabad,datastreamco.@example.com,datastreamco..com
+308,CodeStorm,308,Abbottabad,codestorm@example.com,codestorm.com
+309,DataStream,309,Rawalpindi,datastream@example.com,datastream.com
+310,WebStream Innovations,310,Peshawar,webstreaminnovations@example.com,webstreaminnovations.com
+311,WebSavvy Innovations,311,Sukkur,websavvyinnovations@example.com,websavvyinnovations.com
+312,WebLogic Innovations,312,Gujranwala,weblogicinnovations@example.com,weblogicinnovations.com
+313,InfoTech Innovations,313,Lahore,infotechinnovations@example.com,infotechinnovations.com
+314,CodeLogic,314,Islamabad,codelogic@example.com,codelogic.com
+315,TechSphere Innovations,315,Gujranwala,techsphereinnovations@example.com,techsphereinnovations.com
+316,ByteWise Solutions,316,Faisalabad,bytewisesolutions@example.com,bytewisesolutions.com
+317,DataDynamix,317,Multan,datadynamix@example.com,datadynamix.com
+318,InnoTech,318,Rawalpindi,innotech@example.com,innotech.com
+319,TechWorks,319,Karachi,techworks@example.com,techworks.com
+320,CyberSphere,320,Lahore,cybersphere@example.com,cybersphere.com
+321,CloudEdge Solutions,321,Sialkot,cloudedgesolutions@example.com,cloudedgesolutions.com
+322,WebSphere,322,Sialkot,websphere@example.com,websphere.com
+323,NetWorx Solutions,323,Multan,networxsolutions@example.com,networxsolutions.com
+324,DataStorm Co.,324,Faisalabad,datastormco.@example.com,datastormco..com
+325,CloudSphere Systems,325,Islamabad,cloudspheresystems@example.com,cloudspheresystems.com
+326,CyberCraft Solutions,326,Rawalpindi,cybercraftsolutions@example.com,cybercraftsolutions.com
+327,DataSphere,327,Rawalpindi,datasphere@example.com,datasphere.com
+328,InfoCloud Systems,328,Gujranwala,infocloudsystems@example.com,infocloudsystems.com
+329,WebCrafters Co.,329,Rawalpindi,webcraftersco.@example.com,webcraftersco..com
+330,DataWorks Co.,330,Quetta,dataworksco.@example.com,dataworksco..com
+331,CyberSphere,331,Karachi,cybersphere@example.com,cybersphere.com
+332,CodeCloud Solutions,332,Faisalabad,codecloudsolutions@example.com,codecloudsolutions.com
+333,WebCraft,333,Lahore,webcraft@example.com,webcraft.com
+334,DataWorks Co.,334,Sialkot,dataworksco.@example.com,dataworksco..com
+335,NetWorks Co.,335,Sialkot,networksco.@example.com,networksco..com
+336,InnoGenius,336,Abbottabad,innogenius@example.com,innogenius.com
+337,DataStream Technologies,337,Karachi,datastreamtechnologies@example.com,datastreamtechnologies.com
+338,InfoNinja Systems,338,Islamabad,infoninjasystems@example.com,infoninjasystems.com
+339,CyberNest Solutions,339,Quetta,cybernestsolutions@example.com,cybernestsolutions.com
+340,WebGenius,340,Islamabad,webgenius@example.com,webgenius.com
+341,DataGenius Co.,341,Karachi,datageniusco.@example.com,datageniusco..com
+342,CloudMasters,342,Faisalabad,cloudmasters@example.com,cloudmasters.com
+343,DataRangers,343,Abbottabad,datarangers@example.com,datarangers.com
+344,TechGenius Co.,344,Gujranwala,techgeniusco.@example.com,techgeniusco..com
+345,CyberTech Solutions,345,Sukkur,cybertechsolutions@example.com,cybertechsolutions.com
+346,ByteCloud,346,Peshawar,bytecloud@example.com,bytecloud.com
+347,CyberTech Solutions,347,Gujranwala,cybertechsolutions@example.com,cybertechsolutions.com
+348,CodeSphere Innovations,348,Gujranwala,codesphereinnovations@example.com,codesphereinnovations.com
+349,CyberForge Solutions,349,Nawabshah,cyberforgesolutions@example.com,cyberforgesolutions.com
+350,TechSphere,350,Multan,techsphere@example.com,techsphere.com
+351,DataSphere,351,Hyderabad,datasphere@example.com,datasphere.com
+352,InfoCraft,352,Bahawalpur,infocraft@example.com,infocraft.com
+353,ByteSavvy,353,Bahawalpur,bytesavvy@example.com,bytesavvy.com
+354,CyberStream,354,Sukkur,cyberstream@example.com,cyberstream.com
+355,WebLogic Innovations,355,Bahawalpur,weblogicinnovations@example.com,weblogicinnovations.com
+356,CloudSphere,356,Lahore,cloudsphere@example.com,cloudsphere.com
+357,CyberEdge Innovations,357,Gujranwala,cyberedgeinnovations@example.com,cyberedgeinnovations.com
+358,NetTech,358,Bahawalpur,nettech@example.com,nettech.com
+359,CloudLogic Systems,359,Lahore,cloudlogicsystems@example.com,cloudlogicsystems.com
+360,WebCompass,360,Abbottabad,webcompass@example.com,webcompass.com
+361,WebCraft,361,Sukkur,webcraft@example.com,webcraft.com
+362,InnoSoft Technologies,362,Rawalpindi,innosofttechnologies@example.com,innosofttechnologies.com
+363,ByteWise Solutions,363,Karachi,bytewisesolutions@example.com,bytewisesolutions.com
+364,InnoCloud Innovations,364,Sialkot,innocloudinnovations@example.com,innocloudinnovations.com
+365,CyberMatrix Solutions,365,Lahore,cybermatrixsolutions@example.com,cybermatrixsolutions.com
+366,TechHive,366,Bahawalpur,techhive@example.com,techhive.com
+367,ByteLogic,367,Multan,bytelogic@example.com,bytelogic.com
+368,CyberCraft Solutions,368,Islamabad,cybercraftsolutions@example.com,cybercraftsolutions.com
+369,WebSphere Innovations,369,Sialkot,websphereinnovations@example.com,websphereinnovations.com
+370,NetCraft Innovations,370,Multan,netcraftinnovations@example.com,netcraftinnovations.com
+371,TechGenie,371,Peshawar,techgenie@example.com,techgenie.com
+372,CloudTech Solutions,372,Islamabad,cloudtechsolutions@example.com,cloudtechsolutions.com
+373,CodeLogic Co.,373,Karachi,codelogicco.@example.com,codelogicco..com
+374,TechEdge Co.,374,Nawabshah,techedgeco.@example.com,techedgeco..com
+375,InnoSoft Technologies,375,Karachi,innosofttechnologies@example.com,innosofttechnologies.com
+376,WebSphere Innovations,376,Peshawar,websphereinnovations@example.com,websphereinnovations.com
+377,ByteWorks,377,Rawalpindi,byteworks@example.com,byteworks.com
+378,WebStream Systems,378,Karachi,webstreamsystems@example.com,webstreamsystems.com
+379,CloudCompass,379,Sialkot,cloudcompass@example.com,cloudcompass.com
+380,CodeStorm Co.,380,Lahore,codestormco.@example.com,codestormco..com
+381,Innovative Solutions Co.,381,Gujranwala,innovativesolutionsco.@example.com,innovativesolutionsco..com
+382,DataGenius,382,Gujranwala,datagenius@example.com,datagenius.com
+383,CyberMatrix,383,Peshawar,cybermatrix@example.com,cybermatrix.com
+384,InnoTech Innovations,384,Gujranwala,innotechinnovations@example.com,innotechinnovations.com
+385,WebCompass,385,Sialkot,webcompass@example.com,webcompass.com
+386,CloudStream,386,Islamabad,cloudstream@example.com,cloudstream.com
+387,InnoMatrix,387,Multan,innomatrix@example.com,innomatrix.com
+388,WebGenius Innovations,388,Nawabshah,webgeniusinnovations@example.com,webgeniusinnovations.com
+389,ByteStorm Solutions,389,Gujranwala,bytestormsolutions@example.com,bytestormsolutions.com
+390,CyberNest Solutions,390,Quetta,cybernestsolutions@example.com,cybernestsolutions.com
+391,DataSavvy,391,Nawabshah,datasavvy@example.com,datasavvy.com
+392,DataGenius Co.,392,Gujranwala,datageniusco.@example.com,datageniusco..com
+393,WebLogic Innovations,393,Rawalpindi,weblogicinnovations@example.com,weblogicinnovations.com
+394,WebStream Innovations,394,Bahawalpur,webstreaminnovations@example.com,webstreaminnovations.com
+395,ByteLogic,395,Hyderabad,bytelogic@example.com,bytelogic.com
+396,ByteSphere,396,Sialkot,bytesphere@example.com,bytesphere.com
+397,WebCompass,397,Hyderabad,webcompass@example.com,webcompass.com
+398,CyberNest Solutions,398,Sukkur,cybernestsolutions@example.com,cybernestsolutions.com
+399,InnoTech,399,Rawalpindi,innotech@example.com,innotech.com
+400,NetSavvy,400,Bahawalpur,netsavvy@example.com,netsavvy.com
+401,InnoTech Solutions,401,Peshawar,innotechsolutions@example.com,innotechsolutions.com
+402,TechPulse,402,Rawalpindi,techpulse@example.com,techpulse.com
+403,WebLogic,403,Nawabshah,weblogic@example.com,weblogic.com
+404,ByteMatrix,404,Bahawalpur,bytematrix@example.com,bytematrix.com
+405,InnoWorks Solutions,405,Gujranwala,innoworkssolutions@example.com,innoworkssolutions.com
+406,InfoStream,406,Rawalpindi,infostream@example.com,infostream.com
+407,CyberNest Solutions,407,Rawalpindi,cybernestsolutions@example.com,cybernestsolutions.com
+408,TechLogic,408,Quetta,techlogic@example.com,techlogic.com
+409,WebStream Systems,409,Sukkur,webstreamsystems@example.com,webstreamsystems.com
+410,CodeSphere,410,Islamabad,codesphere@example.com,codesphere.com
+411,WebCrafters Co.,411,Multan,webcraftersco.@example.com,webcraftersco..com
+412,InnoNest Technologies,412,Rawalpindi,innonesttechnologies@example.com,innonesttechnologies.com
+413,WebSphere Technologies,413,Karachi,webspheretechnologies@example.com,webspheretechnologies.com
+414,CloudLogic Co.,414,Peshawar,cloudlogicco.@example.com,cloudlogicco..com
+415,TechSphere,415,Lahore,techsphere@example.com,techsphere.com
+416,ByteMatrix,416,Rawalpindi,bytematrix@example.com,bytematrix.com
+417,CodeSphere Co.,417,Peshawar,codesphereco.@example.com,codesphereco..com
+418,CodeGenius,418,Hyderabad,codegenius@example.com,codegenius.com
+419,ByteForge Technologies,419,Gujranwala,byteforgetechnologies@example.com,byteforgetechnologies.com
+420,InnoMatrix,420,Hyderabad,innomatrix@example.com,innomatrix.com
+421,InfoTech Innovations,421,Faisalabad,infotechinnovations@example.com,infotechinnovations.com
+422,WebSphere Co.,422,Sukkur,websphereco.@example.com,websphereco..com
+423,DataWorks Co.,423,Sialkot,dataworksco.@example.com,dataworksco..com
+424,InfoMatrix Systems,424,Hyderabad,infomatrixsystems@example.com,infomatrixsystems.com
+425,InnoTech Innovations,425,Lahore,innotechinnovations@example.com,innotechinnovations.com
+426,InfoSphere Innovations,426,Abbottabad,infosphereinnovations@example.com,infosphereinnovations.com
+427,CyberWise,427,Multan,cyberwise@example.com,cyberwise.com
+428,ByteWorks Innovations,428,Hyderabad,byteworksinnovations@example.com,byteworksinnovations.com
+429,WebGenius Innovations,429,Faisalabad,webgeniusinnovations@example.com,webgeniusinnovations.com
+430,TechEdge Co.,430,Lahore,techedgeco.@example.com,techedgeco..com
+431,InnoCloud Innovations,431,Gujranwala,innocloudinnovations@example.com,innocloudinnovations.com
+432,WebCraft,432,Peshawar,webcraft@example.com,webcraft.com
+433,CloudSphere Systems,433,Gujranwala,cloudspheresystems@example.com,cloudspheresystems.com
+434,NetCrafters,434,Sialkot,netcrafters@example.com,netcrafters.com
+435,InnoSphere Co.,435,Multan,innosphereco.@example.com,innosphereco..com
+436,DataCompass Solutions,436,Rawalpindi,datacompasssolutions@example.com,datacompasssolutions.com
+437,CloudCraft,437,Peshawar,cloudcraft@example.com,cloudcraft.com
+438,TechCraft Solutions,438,Abbottabad,techcraftsolutions@example.com,techcraftsolutions.com
+439,CodeStorm Innovations,439,Abbottabad,codestorminnovations@example.com,codestorminnovations.com
+440,InfoGate Innovations,440,Karachi,infogateinnovations@example.com,infogateinnovations.com
+441,NetMatrix Technologies,441,Hyderabad,netmatrixtechnologies@example.com,netmatrixtechnologies.com
+442,WebStream Innovations,442,Sukkur,webstreaminnovations@example.com,webstreaminnovations.com
+443,TechNest Innovations,443,Sialkot,technestinnovations@example.com,technestinnovations.com
+444,CodeNest Co.,444,Gujranwala,codenestco.@example.com,codenestco..com
+445,InnoTech Innovations,445,Hyderabad,innotechinnovations@example.com,innotechinnovations.com
+446,CloudCraft,446,Sialkot,cloudcraft@example.com,cloudcraft.com
+447,TechForge,447,Abbottabad,techforge@example.com,techforge.com
+448,InfoNinja Systems,448,Quetta,infoninjasystems@example.com,infoninjasystems.com
+449,CloudTech Solutions,449,Bahawalpur,cloudtechsolutions@example.com,cloudtechsolutions.com
+450,NetForge Systems,450,Nawabshah,netforgesystems@example.com,netforgesystems.com
+451,ByteCompass,451,Faisalabad,bytecompass@example.com,bytecompass.com
+452,InnoStream Co.,452,Multan,innostreamco.@example.com,innostreamco..com
+453,ByteSavvy,453,Karachi,bytesavvy@example.com,bytesavvy.com
+454,TechEdge Co.,454,Gujranwala,techedgeco.@example.com,techedgeco..com
+455,InnoTech Co.,455,Nawabshah,innotechco.@example.com,innotechco..com
+456,NetNinja Technologies,456,Nawabshah,netninjatechnologies@example.com,netninjatechnologies.com
+457,CyberSphere Solutions,457,Gujranwala,cyberspheresolutions@example.com,cyberspheresolutions.com
+458,WebLogic Co.,458,Hyderabad,weblogicco.@example.com,weblogicco..com
+459,CyberVerse,459,Sialkot,cyberverse@example.com,cyberverse.com
+460,CodeGenius,460,Islamabad,codegenius@example.com,codegenius.com
+461,DataPulse Innovations,461,Faisalabad,datapulseinnovations@example.com,datapulseinnovations.com
+462,ByteStorm Solutions,462,Faisalabad,bytestormsolutions@example.com,bytestormsolutions.com
+463,DataLogic,463,Sialkot,datalogic@example.com,datalogic.com
+464,CyberCraft Solutions,464,Faisalabad,cybercraftsolutions@example.com,cybercraftsolutions.com
+465,ByteSphere Systems,465,Abbottabad,bytespheresystems@example.com,bytespheresystems.com
+466,TechGenie,466,Islamabad,techgenie@example.com,techgenie.com
+467,TechEdge Co.,467,Multan,techedgeco.@example.com,techedgeco..com
+468,DataSphere Co.,468,Faisalabad,datasphereco.@example.com,datasphereco..com
+469,InfoCloud Co.,469,Faisalabad,infocloudco.@example.com,infocloudco..com
+470,InfoNest Technologies,470,Sialkot,infonesttechnologies@example.com,infonesttechnologies.com
+471,NetForge Systems,471,Lahore,netforgesystems@example.com,netforgesystems.com
+472,CyberCrafters,472,Quetta,cybercrafters@example.com,cybercrafters.com
+473,InfoTech,473,Lahore,infotech@example.com,infotech.com
+474,InfoStream,474,Quetta,infostream@example.com,infostream.com
+475,DataSavvy,475,Gujranwala,datasavvy@example.com,datasavvy.com
+476,CodeSphere,476,Bahawalpur,codesphere@example.com,codesphere.com
+477,InnoMatrix,477,Islamabad,innomatrix@example.com,innomatrix.com
+478,CloudLogic,478,Bahawalpur,cloudlogic@example.com,cloudlogic.com
+479,CodeLogic Co.,479,Rawalpindi,codelogicco.@example.com,codelogicco..com
+480,ByteStorm,480,Quetta,bytestorm@example.com,bytestorm.com
+481,CodeCrafters,481,Karachi,codecrafters@example.com,codecrafters.com
+482,DataStream Co.,482,Bahawalpur,datastreamco.@example.com,datastreamco..com
+483,InnoTech Innovations,483,Faisalabad,innotechinnovations@example.com,innotechinnovations.com
+484,NetCraft Innovations,484,Quetta,netcraftinnovations@example.com,netcraftinnovations.com
+485,CodeCloud Solutions,485,Sukkur,codecloudsolutions@example.com,codecloudsolutions.com
+486,CloudEdge,486,Quetta,cloudedge@example.com,cloudedge.com
+487,DataCompass Solutions,487,Peshawar,datacompasssolutions@example.com,datacompasssolutions.com
+488,InnoCloud Innovations,488,Hyderabad,innocloudinnovations@example.com,innocloudinnovations.com
+489,DataSphere Co.,489,Abbottabad,datasphereco.@example.com,datasphereco..com
+490,ByteCrafters,490,Lahore,bytecrafters@example.com,bytecrafters.com
+491,WebSavvy Innovations,491,Quetta,websavvyinnovations@example.com,websavvyinnovations.com
+492,NetGenius Technologies,492,Rawalpindi,netgeniustechnologies@example.com,netgeniustechnologies.com
+493,WebLogic Innovations,493,Karachi,weblogicinnovations@example.com,weblogicinnovations.com
+494,NetCraft Solutions,494,Gujranwala,netcraftsolutions@example.com,netcraftsolutions.com
+495,DataGenius Co.,495,Islamabad,datageniusco.@example.com,datageniusco..com
+496,WebWeavers,496,Karachi,webweavers@example.com,webweavers.com
+497,WebSphere Co.,497,Abbottabad,websphereco.@example.com,websphereco..com
+498,DataStream Solutions,498,Lahore,datastreamsolutions@example.com,datastreamsolutions.com
+499,InnoWorks,499,Nawabshah,innoworks@example.com,innoworks.com
+500,InnovaTech Solutions,500,Faisalabad,innovatechsolutions@example.com,innovatechsolutions.com
