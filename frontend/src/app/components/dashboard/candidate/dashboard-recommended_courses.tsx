@@ -25,7 +25,7 @@ const DashboardRecommendedCourses = ({ setIsOpenSidebar }: IProps) => {
   useEffect(() => {
     const getCandidateDetailsUsingEmail = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/auth/getCandidateDetailsUsingEmail/${localStorage.getItem("email")}`);
+        const response = await axios.get(`http://52.87.220.206:5000/api/auth/getCandidateDetailsUsingEmail/${localStorage.getItem("email")}`);
         console.log("Candidate details: ", response.data.data);
         if(response.status === 200){
           setUserDetails(response.data.data.company);
@@ -42,7 +42,7 @@ const DashboardRecommendedCourses = ({ setIsOpenSidebar }: IProps) => {
 
     const fetchRecommendedCourses = async () => {
       try {
-        const url=`http://localhost:2004/recommend/${localStorage.getItem("candidate_id")}`;
+        const url=`http://52.87.220.206:2004/recommend/${localStorage.getItem("candidate_id")}`;
         
         const email=localStorage.getItem("email");
         console.log("email of login user is"+localStorage.getItem("email")+"const"+email);

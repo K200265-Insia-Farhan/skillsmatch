@@ -144,7 +144,7 @@ const CompanyDetailsArea = () => {
     const fetchCompanyDetails = async () => {
       try {
         if(id){
-          const response = await axios.get(`http://localhost:5000/api/auth/getCompanyDetailsUsingId/${id}`);
+          const response = await axios.get(`http://52.87.220.206:5000/api/auth/getCompanyDetailsUsingId/${id}`);
           // console.log("fetchCompanyDetails :: response: ", response.data.data.company);
           setCompanyDetails(response.data.data.company);
         }
@@ -154,11 +154,11 @@ const CompanyDetailsArea = () => {
     }
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/auth/getCompanyProfilePictureUsingId/${id}`);
+        const response = await axios.get(`http://52.87.220.206:5000/api/auth/getCompanyProfilePictureUsingId/${id}`);
         console.log("response: ", response.data.data.filePath);
         if(response.status === 200){
           // construct full url based on relative path
-          const fullUrl = `http://localhost:5000/${response.data.data.filePath}`
+          const fullUrl = `http://52.87.220.206/${response.data.data.filePath}`
 
           // set profile picture
           setProfilePicture(fullUrl);

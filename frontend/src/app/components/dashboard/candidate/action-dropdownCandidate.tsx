@@ -25,7 +25,7 @@ const ActionDropdown = ({ job_id, companyHR_id }) => {
         candidate_id: id,
         companyHR_id: companyHR_id
       }
-      const response = await axios.post(`http://localhost:5000/api/auth/saveJob`,data,{
+      const response = await axios.post(`http://52.87.220.206:5000/api/auth/saveJob`,data,{
         headers: {
           Authorization: `Bearer ${token}`,
         },

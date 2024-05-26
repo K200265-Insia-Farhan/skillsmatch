@@ -9,7 +9,7 @@ const ActionDropdown = ({ job_id, onUnsaveJob }) => {
       const token = localStorage.getItem("token") as string;
 
       const response = await axios.delete(
-        `http://localhost:5000/api/auth/unsaveJob`,
+        `http://52.87.220.206:5000/api/auth/unsaveJob`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

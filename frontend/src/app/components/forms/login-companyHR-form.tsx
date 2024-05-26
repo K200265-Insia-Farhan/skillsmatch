@@ -54,13 +54,13 @@ const LoginFormCompanyHR = () => {
   // on submit
   const onSubmit = async (data: IFormData) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/loginCompanyHR", data);
+      const response = await axios.post("http://52.87.220.206:5000/api/auth/loginCompanyHR", data);
       const { token } = response.data;
       if (response) {
         alert("Login successfully!");
         console.log(response.data);
         localStorage.setItem("token", token);
-        // router.push("http://localhost:3000/dashboard/employ-dashboard");
+        // router.push("http://52.87.220.206:3000/dashboard/employ-dashboard");
         window.location.reload();
       } else {
         alert("Login failed!");

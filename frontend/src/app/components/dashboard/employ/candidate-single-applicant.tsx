@@ -55,7 +55,7 @@ const CandidateSingleApplicant = ({ item }: { item: candidateDetails }) => {
           candidate_id: item.candidate_id
         }
         const response = await axios.post(
-          'http://localhost:5000/api/auth/getCandidateProfilePicture',
+          'http://52.87.220.206:5000/api/auth/getCandidateProfilePicture',
           data,
           {
             headers: {
@@ -68,7 +68,7 @@ const CandidateSingleApplicant = ({ item }: { item: candidateDetails }) => {
 
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://localhost:5000${response.data.filePath}`;
+          const fullUrl = `http://52.87.220.206${response.data.filePath}`;
 
           console.log('saved-candidate-item :: Full URL:', fullUrl);
 

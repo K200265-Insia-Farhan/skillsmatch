@@ -69,7 +69,7 @@ const SubmitJobArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://localhost:5000/api/auth/submitJob",
+        "http://52.87.220.206:5000/api/auth/submitJob",
         jobDetails,
         {
           headers: {

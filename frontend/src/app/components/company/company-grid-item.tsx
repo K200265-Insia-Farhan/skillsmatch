@@ -57,11 +57,11 @@ const CompanyGridItem = ({ item, style_2=false }: { item: CompanyModel; style_2?
   useEffect(() => {
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/auth/getCompanyProfilePictureUsingId/${item.companyHR_id}`);
+        const response = await axios.get(`http://52.87.220.206:5000/api/auth/getCompanyProfilePictureUsingId/${item.companyHR_id}`);
         // console.log("response: ", response.data.data.filePath);
         if(response.status === 200){
           // construct full url based on relative path
-          const fullUrl = `http://localhost:5000/${response.data.data.filePath}`
+          const fullUrl = `http://52.87.220.206/${response.data.data.filePath}`
           // set profile picture
           setProfilePicture(fullUrl);
         }
@@ -74,7 +74,7 @@ const CompanyGridItem = ({ item, style_2=false }: { item: CompanyModel; style_2?
       try {
         const token = await localStorage.getItem('token');
         const response = await axios.get(
-          `http://localhost:5000/api/auth/countJobsUsingCompanyHRId/${item.companyHR_id}`,
+          `http://52.87.220.206:5000/api/auth/countJobsUsingCompanyHRId/${item.companyHR_id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

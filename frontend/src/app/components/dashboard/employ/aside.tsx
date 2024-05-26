@@ -117,7 +117,7 @@ const EmployAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     if (role === 'companyHR') {
       localStorage.removeItem('tokenHR');
       localStorage.removeItem('roleHR');
-      window.location.href = 'http://localhost:3000';
+      window.location.href = 'http://52.87.220.206:3000';
     }
   }
 
@@ -125,7 +125,7 @@ const EmployAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     const getCompanyHRDetails = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/auth/companyHRDetails', {
+        const response = await axios.get('http://52.87.220.206:5000/api/auth/companyHRDetails', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
