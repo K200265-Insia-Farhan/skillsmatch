@@ -43,7 +43,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       try {
         const token = localStorage.getItem("token");
         const responseCandidate = await axios.get(
-          "http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/candidateDetails",
+          "http://localhost:5000/api/auth/candidateDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
         );
 
         const responseInstitute = await axios.get(
-          "http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getInstituteDetails",
+          "http://localhost:5000/api/auth/getInstituteDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -61,7 +61,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
         )
 
         const responseWorkExperience = await axios.get(
-          "http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getWorkExperienceDetails",
+          "http://localhost:5000/api/auth/getWorkExperienceDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       try {
         const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getProfilePicture',
+          'http://localhost:5000/api/auth/getProfilePicture',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -101,7 +101,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000${response.data.filePath}`;
+          const fullUrl = `http://localhost:5000${response.data.filePath}`;
 
           // Update the profile picture state with the full URL
           setProfilePicture(fullUrl);
@@ -123,7 +123,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.put("http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/updateCandidateDetails", userDetails, {
+      const response = await axios.put("http://localhost:5000/api/auth/updateCandidateDetails", userDetails, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -138,7 +138,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
       setEducationDetails([]);
 
-      const createEducationResponse = await axios.post("http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/createCandidateEducationDetails", educationDetails, {
+      const createEducationResponse = await axios.post("http://localhost:5000/api/auth/createCandidateEducationDetails", educationDetails, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -153,7 +153,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
       setWorkExperience([]);
 
-      const createWorkExperienceResponse = await axios.post("http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/createCandidateWorkExperience", workExperience, {
+      const createWorkExperienceResponse = await axios.post("http://localhost:5000/api/auth/createCandidateWorkExperience", workExperience, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -226,7 +226,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         // Send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/uploadProfilePicture',
+          'http://localhost:5000/api/auth/uploadProfilePicture',
           formData,
           {
             headers: {
@@ -293,7 +293,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         // Send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/uploadResume',
+          'http://localhost:5000/api/auth/uploadResume',
           formData,
           {
             headers: {
@@ -327,13 +327,13 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       }
 
       // Make a GET request to the /getResume API endpoint
-      const response = await axios.get(`http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getResume?id=${id}`,{
+      const response = await axios.get(`http://localhost:5000/api/auth/getResume?id=${id}`,{
         headers: {
           Authorization: `Bearer ${token}`
         }
       });
 
-      const newPath = "http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000" + response.data.filePath;
+      const newPath = "http://localhost:5000" + response.data.filePath;
 
       if (response.status === 200) {
         // Update the state with the resume path received from the API

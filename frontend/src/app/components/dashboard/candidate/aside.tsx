@@ -146,7 +146,7 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     const getUserDetails = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/candidateDetails', {
+        const response = await axios.get('http://localhost:5000/api/auth/candidateDetails', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -166,7 +166,7 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
       try {
         const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getProfilePicture',
+          'http://localhost:5000/api/auth/getProfilePicture',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -178,7 +178,7 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
 
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000${response.data.filePath}`;
+          const fullUrl = `http://localhost:5000${response.data.filePath}`;
 
           // Update the profile picture state with the full URL
           setProfilePicture(fullUrl);

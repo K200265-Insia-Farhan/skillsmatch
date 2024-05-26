@@ -53,7 +53,7 @@ const AppliedCandidatesArea = ({setIsOpenSidebar}:IProps) => {
       const getapplicants = async () => {
         try {
           const response = await axios.get(
-            `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getApplicantsUsingJobId/${job_id}`,
+            `http://localhost:5000/api/auth/getApplicantsUsingJobId/${job_id}`,
             {
               headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

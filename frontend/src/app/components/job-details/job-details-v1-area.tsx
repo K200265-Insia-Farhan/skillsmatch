@@ -63,7 +63,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
 	try {
 	  if (jobData.companyHR_id) {
 		const response = await axios.get(
-		  `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
+		  `http://localhost:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
 		  {
 			  headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -89,7 +89,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
   const fetchProfilePicture = async (companyhrid: number) => {
 	try {
 	  const response = await axios.get(
-		`http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
+		`http://localhost:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
 		{
 		  headers: {
 			Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -106,7 +106,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
 
 	  if (response.status === 200) {
 		// construct full url based on relative path
-		const fullUrl = `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/${response.data.data.filePath}`;
+		const fullUrl = `http://localhost:5000/${response.data.data.filePath}`;
 
 		// set profile picture
 		setProfilePicture(fullUrl);
@@ -124,7 +124,7 @@ useEffect(() => {
     const getJobDetailsUsingId = async () => {
 		try {
 		  const response = await axios.get(
-			`http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getJobDetailsUsingId/${job_id}`,
+			`http://localhost:5000/api/auth/getJobDetailsUsingId/${job_id}`,
 			{
 			  headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -170,7 +170,7 @@ const handleApplyNowClick = async () => {
 
     try{
       const response = await axios.post(
-			`http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/applyJob`,
+			`http://localhost:5000/api/auth/applyJob`,
       data,
 			{
 			  headers: {

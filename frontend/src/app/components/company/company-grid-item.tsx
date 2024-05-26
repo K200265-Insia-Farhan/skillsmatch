@@ -57,11 +57,11 @@ const CompanyGridItem = ({ item, style_2=false }: { item: CompanyModel; style_2?
   useEffect(() => {
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get(`http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getCompanyProfilePictureUsingId/${item.companyHR_id}`);
+        const response = await axios.get(`http://localhost:5000/api/auth/getCompanyProfilePictureUsingId/${item.companyHR_id}`);
         // console.log("response: ", response.data.data.filePath);
         if(response.status === 200){
           // construct full url based on relative path
-          const fullUrl = `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/${response.data.data.filePath}`
+          const fullUrl = `http://localhost:5000/${response.data.data.filePath}`
           // set profile picture
           setProfilePicture(fullUrl);
         }
@@ -74,7 +74,7 @@ const CompanyGridItem = ({ item, style_2=false }: { item: CompanyModel; style_2?
       try {
         const token = await localStorage.getItem('token');
         const response = await axios.get(
-          `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/countJobsUsingCompanyHRId/${item.companyHR_id}`,
+          `http://localhost:5000/api/auth/countJobsUsingCompanyHRId/${item.companyHR_id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

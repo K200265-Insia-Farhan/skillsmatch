@@ -33,7 +33,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/saveCompanyDetails",
+        "http://localhost:5000/api/auth/saveCompanyDetails",
         companyDetails,
         {
           headers: {
@@ -87,7 +87,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/companyDetails",
+          "http://localhost:5000/api/auth/companyDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -112,7 +112,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       try {
         const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getCompanyProfilePicture',
+          'http://localhost:5000/api/auth/getCompanyProfilePicture',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -124,7 +124,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
         if(response.status === 200){
           // construct the full url based on relative path
-          const fullUrl = `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/${response.data.filePath}`;
+          const fullUrl = `http://localhost:5000/${response.data.filePath}`;
 
           console.log("fetchCompanyProfilePicture :: fullUrl: ", fullUrl)
 
@@ -154,7 +154,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
         // send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/uploadCompanyProfilePicture',
+          'http://localhost:5000/api/auth/uploadCompanyProfilePicture',
           formData,
           {
             headers: {

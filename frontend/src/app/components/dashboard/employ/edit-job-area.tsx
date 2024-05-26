@@ -32,7 +32,7 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
       const getJobDetailsUsingId = async () => {
       try {
         const response = await axios.get(
-        `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/getJobDetailsUsingId/${jobid}`,
+        `http://localhost:5000/api/auth/getJobDetailsUsingId/${jobid}`,
         {
           headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -97,7 +97,7 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        `http://a80ab3f4d07d1472e9703892bfd831e4-2032056606.us-east-1.elb.amazonaws.com:5000/api/auth/editJob/${jobid}`,
+        `http://localhost:5000/api/auth/editJob/${jobid}`,
         jobDetails,
         {
           headers: {
