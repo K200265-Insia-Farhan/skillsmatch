@@ -53,7 +53,7 @@ const RecommendedCandidatesArea = ({setIsOpenSidebar}:IProps) => {
       const getapplicants = async () => {
         try {
           const response = await axios.get(
-            `http://52.87.220.206:5000/api/auth/getApplicantsUsingJobId/${job_id}`,
+            `http://18.210.17.62:5000/api/auth/getApplicantsUsingJobId/${job_id}`,
             {
               headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -81,7 +81,7 @@ const RecommendedCandidatesArea = ({setIsOpenSidebar}:IProps) => {
               const candidateIds = response.data.recommended_candidates.map(recommended_candidate => recommended_candidate.candidate_id);
               console.log("recommended-candidates-area.tsx :: Recommended candidate ids: ", candidateIds);
 
-              const candidateDetailsResponse = await axios.post('http://52.87.220.206:5000/api/auth/getCandidateDetailsUsingCandidateIdsArray', { candidateIds },
+              const candidateDetailsResponse = await axios.post('http://18.210.17.62:5000/api/auth/getCandidateDetailsUsingCandidateIdsArray', { candidateIds },
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`,

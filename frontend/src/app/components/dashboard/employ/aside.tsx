@@ -125,7 +125,7 @@ const EmployAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     const getCompanyHRDetails = async () => {
       try {
        //const token = localStorage.getItem('token');
-        const response = await axios.get('http://52.87.220.206:5000/api/auth/companyHRDetails', {
+        const response = await axios.get('http://18.210.17.62:5000/api/auth/companyHRDetails', {
           // headers: {
           //   Authorization: `Bearer ${token}`,
           // },

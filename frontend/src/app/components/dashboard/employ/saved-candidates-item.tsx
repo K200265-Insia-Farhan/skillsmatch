@@ -56,7 +56,7 @@ const SavedCandidateItem = ({ item }: { item: candidateDetails }) => {
           candidate_id: item.candidate_id
         }
         const response = await axios.post(
-          'http://52.87.220.206:5000/api/auth/getCandidateProfilePicture',
+          'http://18.210.17.62:5000/api/auth/getCandidateProfilePicture',
           data,
           // {
           //   headers: {

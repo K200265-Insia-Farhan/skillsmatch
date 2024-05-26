@@ -242,7 +242,7 @@ const JobListThree = ({ itemsPerPage,grid_style=false }: { itemsPerPage: number;
     const getAllJobs = async () => {
       try {
         const response = await axios.get(
-          'http://52.87.220.206:5000/api/auth/getAllJobs',
+          'http://18.210.17.62:5000/api/auth/getAllJobs',
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`

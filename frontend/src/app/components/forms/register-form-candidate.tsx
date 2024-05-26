@@ -100,7 +100,7 @@ const RegisterForm = () => {
 
   const onSubmit = async (data: IFormData) => {
     try {
-      const response = await axios.post("http://52.87.220.206:5000/api/auth/signupCandidate", data);
+      const response = await axios.post("http://18.210.17.62:5000/api/auth/signupCandidate", data);
       if(response) {
         alert("Candidate Registered successfully!");
         reset();

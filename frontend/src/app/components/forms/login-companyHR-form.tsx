@@ -54,7 +54,7 @@ const LoginFormCompanyHR = () => {
   // on submit
   const onSubmit = async (data: IFormData) => {
     try {
-      const response = await axios.post("http://52.87.220.206:5000/api/auth/loginCompanyHR", data);
+      const response = await axios.post("http://18.210.17.62:5000/api/auth/loginCompanyHR", data);
       // const { token } = response.data;
       if (response) {
         alert("Login successfully!");

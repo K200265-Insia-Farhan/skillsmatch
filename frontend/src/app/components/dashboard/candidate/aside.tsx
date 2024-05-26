@@ -146,7 +146,7 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     const getUserDetails = async () => {
       try {
        //const token = localStorage.getItem('token');
-        const response = await axios.get('http://52.87.220.206:5000/api/auth/candidateDetails'
+        const response = await axios.get('http://18.210.17.62:5000/api/auth/candidateDetails'
       );
 
         if (response.status === 200) {
@@ -163,7 +163,7 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
       try {
        //const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://52.87.220.206:5000/api/auth/getProfilePicture',
+          'http://18.210.17.62:5000/api/auth/getProfilePicture',
          
         );
 
