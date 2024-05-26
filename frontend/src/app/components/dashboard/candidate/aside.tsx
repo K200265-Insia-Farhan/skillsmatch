@@ -145,12 +145,9 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
   useEffect(() => {
     const getUserDetails = async () => {
       try {
-        const token = localStorage.getItem('token');
-        const response = await axios.get('http://52.87.220.206:5000/api/auth/candidateDetails', {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
+       //const token = localStorage.getItem('token');
+        const response = await axios.get('http://52.87.220.206:5000/api/auth/candidateDetails'
+      );
 
         if (response.status === 200) {
           const { firstname, lastname } = response.data.data.candidate;
@@ -164,14 +161,10 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
 
     const fetchProfilePicture = async () => {
       try {
-        const token = localStorage.getItem('token');
+       //const token = localStorage.getItem('token');
         const response = await axios.get(
           'http://52.87.220.206:5000/api/auth/getProfilePicture',
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
+         
         );
 
         // console.log('Profile Picture Path:', response.data.filePath);

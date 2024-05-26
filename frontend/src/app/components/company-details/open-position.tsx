@@ -33,14 +33,15 @@ const OpenPosition = () => {
   React.useEffect(() => {
     const getJobsByThisCompany = async () => {
       try {
-        const token = localStorage.getItem("token");
+        // const token = localStorage.getItem("token");
         const response = await axios.get(
           `http://52.87.220.206:5000/api/auth/getJobsByCompanyHRId/${companyHR_id}`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            }
-          })
+          // {
+          //   headers: {
+          //     Authorization: `Bearer ${token}`,
+          //   }
+          // }
+        );
           // console.log("getJobsByThisCompany :: response", response.data);
           if(response.status === 200){
             setJobData(response.data.jobs)

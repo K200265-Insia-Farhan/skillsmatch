@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 
 const { Company_HR, AppliedJobs } = require('../models');
 
@@ -307,7 +307,7 @@ async function getJobsByCompanyHRId(req, res) {
 
 // -----------------------------------------------------------------------
 // Import required modules
-const { google } = require("googleapis");
+// const { google } = require("googleapis");
 // const fs = require("fs");
 
 // Get paths from environment variables
@@ -315,33 +315,33 @@ const { google } = require("googleapis");
 // const TOKEN_PATH = process.env.TOKEN_PATH;
 
 // Load credentials from JSON file
-const credentials = JSON.parse(
-  fs.readFileSync("client_secret_924825865240-3qavb2lveu8mmj156l2f4aphucqhurh2.apps.googleusercontent.com.json")
-);
+// const credentials = JSON.parse(
+//   fs.readFileSync("client_secret_924825865240-3qavb2lveu8mmj156l2f4aphucqhurh2.apps.googleusercontent.com.json")
+// );
 // Read credentials from the JSON file
 // const credentials = JSON.parse(fs.readFileSync(GOOGLE_CLIENT_SECRET_PATH));
 
 // Set up OAuth2 client
-const { client_secret, client_id, redirect_uris } = credentials.installed;
-const oAuth2Client = new google.auth.OAuth2(
-  client_id,
-  client_secret,
-  redirect_uris[0]
-);
+// const { client_secret, client_id, redirect_uris } = credentials.installed;
+// const oAuth2Client = new google.auth.OAuth2(
+//   client_id,
+//   client_secret,
+//   redirect_uris[0]
+// );
 
 // Set token if you already have one, otherwise generate a new one
-const token = fs.readFileSync("token.json");
-// const token = fs.readFileSync(TOKEN_PATH);
-oAuth2Client.setCredentials(JSON.parse(token));
+// const token = fs.readFileSync("token.json");
+// // const token = fs.readFileSync(TOKEN_PATH);
+// oAuth2Client.setCredentials(JSON.parse(token));
 
 // Create Gmail API instance
-const gmail = google.gmail({ version: "v1", auth: oAuth2Client });
+// const gmail = google.gmail({ version: "v1", auth: oAuth2Client });
 
-// Function to decode email body
-function decodeBody(body) {
-  const buff = Buffer.from(body, "base64");
-  return buff.toString("utf-8");
-}
+// // Function to decode email body
+// function decodeBody(body) {
+//   const buff = Buffer.from(body, "base64");
+//   return buff.toString("utf-8");
+// }
 
 // // Define the async function to get jobs by career officers
 // async function getJobsByCareerOfficers(req, res) {

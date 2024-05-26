@@ -36,9 +36,9 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
         "http://52.87.220.206:5000/api/auth/saveCompanyDetails",
         companyDetails,
         {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+          // headers: {
+          //   Authorization: `Bearer ${token}`,
+          // },
         }
       );
       if (response.status === 200) {
@@ -110,7 +110,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
   useEffect(()=> {
     const fetchCompanyProfilePicture = async () => {
       try {
-        const token = localStorage.getItem('token');
+       //const token = localStorage.getItem('token');
         const response = await axios.get(
           'http://52.87.220.206:5000/api/auth/getCompanyProfilePicture',
           {
@@ -146,7 +146,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
     if(file){
       try{
-        const token = localStorage.getItem('token');
+       //const token = localStorage.getItem('token');
 
         // create a formData object to send the file
         const formData = new FormData();

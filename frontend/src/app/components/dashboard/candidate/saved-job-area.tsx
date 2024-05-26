@@ -19,11 +19,11 @@ const SavedJobArea = ({ setIsOpenSidebar }: IProps) => {
         const token = localStorage.getItem("token");
         const response = await axios.get(
           `http://52.87.220.206:5000/api/auth/getAllSavedJobs`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
+          // {
+          //   headers: {
+          //     Authorization: `Bearer ${token}`,
+          //   },
+          // }
         );
         setSavedJobs(response.data.data.savedJobs);
       } catch (error) {
@@ -41,11 +41,11 @@ const SavedJobArea = ({ setIsOpenSidebar }: IProps) => {
           const token = localStorage.getItem("token");
           const response = await axios.get(
             `http://52.87.220.206:5000/api/auth/getJobDetailsUsingSavedJobs/${savedJob.job_id}`,
-            {
-              headers: {
-                Authorization: `Bearer ${token}`,
-              },
-            }
+            // {
+            //   headers: {
+            //     Authorization: `Bearer ${token}`,
+            //   },
+            // }
           );
           return response.data.data.jobs[0];
         } catch (error) {

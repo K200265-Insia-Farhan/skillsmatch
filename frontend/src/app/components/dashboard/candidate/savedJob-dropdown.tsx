@@ -10,12 +10,12 @@ const ActionDropdown = ({ job_id, onUnsaveJob }) => {
 
       const response = await axios.delete(
         `http://52.87.220.206:5000/api/auth/unsaveJob`,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-          data: { job_id: job_id }, // Send job_ids as data in the request body
-        }
+        // {
+        //   headers: {
+        //     Authorization: `Bearer ${token}`,
+        //   },
+        //   data: { job_id: job_id }, // Send job_ids as data in the request body
+        // }
       );
 
       if (response.status === 200) {

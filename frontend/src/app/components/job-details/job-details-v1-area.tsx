@@ -173,9 +173,9 @@ const handleApplyNowClick = async () => {
 			`http://52.87.220.206:5000/api/auth/applyJob`,
       data,
 			{
-			  headers: {
-				Authorization: `Bearer ${localStorage.getItem("token")}`,
-			  },
+			  // headers: {
+				// Authorization: `Bearer ${localStorage.getItem("token")}`,
+			  // },
 			});
 
       // console.log("job-details-v1-area :: handleApplyNowClick :: response leone pessi: ", response);

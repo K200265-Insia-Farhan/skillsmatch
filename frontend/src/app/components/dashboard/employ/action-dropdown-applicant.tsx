@@ -47,9 +47,9 @@ const ActionDropdownApplicant = ({ candidate_id }) => {
         `http://52.87.220.206:5000/api/auth/saveCandidate`,
         data,
         {
-          headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
+          // headers: {
+          // Authorization: `Bearer ${localStorage.getItem("token")}`,
+          // },
         }
       )
 
@@ -82,9 +82,9 @@ const ActionDropdownApplicant = ({ candidate_id }) => {
           `http://52.87.220.206:5000/api/auth/unsaveCandidate`,
           data,
           {
-            headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
+            // headers: {
+            // Authorization: `Bearer ${localStorage.getItem("token")}`,
+            // },
           }
         )
   
@@ -123,9 +123,9 @@ const ActionDropdownApplicant = ({ candidate_id }) => {
           `http://52.87.220.206:5000/api/auth/isCandidateSaved`,
           data,
           {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
+            // headers: {
+            //   Authorization: `Bearer ${localStorage.getItem("token")}`,
+            // },
           }
         );
 

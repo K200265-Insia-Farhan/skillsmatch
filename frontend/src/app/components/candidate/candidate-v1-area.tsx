@@ -17,11 +17,6 @@ const CandidateV1Area = ({style_2=false}:{style_2?:boolean}) => {
       try{
         const response = await axios.get(
           "http://52.87.220.206:5000/api/auth/getAllCandidates",
-          {
-            headers: {
-              "Authorization": `Bearer ${localStorage.getItem("token")}`,
-            },
-          }
         );
         if(response.status == 200){
           setCandidateData(response.data.data.candidates);

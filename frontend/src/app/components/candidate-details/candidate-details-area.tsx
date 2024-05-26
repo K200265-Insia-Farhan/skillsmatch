@@ -29,7 +29,7 @@ const CandidateDetailsArea = () => {
   const handleDownloadCV = async () => {
     try {
       // Get the id from search params
-      const token = localStorage.getItem('token');
+     //const token = localStorage.getItem('token');
 
       if (!id) {
         console.error("Candidate id not found in search params");
@@ -38,9 +38,9 @@ const CandidateDetailsArea = () => {
 
       // Make a GET request to the /getResume API endpoint
       const response = await axios.get(`http://52.87.220.206:5000/api/auth/getResume?id=${id}`,{
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
+        // headers: {
+        //   // Authorization: `Bearer ${token}`
+        // }
       });
 
       const newPath = "http://52.87.220.206" + response.data.filePath;

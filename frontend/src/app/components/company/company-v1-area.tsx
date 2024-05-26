@@ -20,11 +20,11 @@ const CompanyV1Area = ({ style_2 = false }: { style_2?: boolean }) => {
     try {
       const response = await axios.get(
         'http://52.87.220.206:5000/api/auth/getAllCompanies',
-        {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
-          }
-        }
+        // {
+        //   headers: {
+        //     Authorization: `Bearer ${localStorage.getItem('token')}`
+        //   }
+        // }
       );
       if(response.status === 200){
         setCompanyData(response.data.data.companies);

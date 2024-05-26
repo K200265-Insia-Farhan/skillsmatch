@@ -72,14 +72,14 @@ const CompanyGridItem = ({ item, style_2=false }: { item: CompanyModel; style_2?
 
     const countJobsUsingCompanyHRId = async () => {
       try {
-        const token = await localStorage.getItem('token');
+        // const token = await localStorage.getItem('token');
         const response = await axios.get(
           `http://52.87.220.206:5000/api/auth/countJobsUsingCompanyHRId/${item.companyHR_id}`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
+          // {
+          //   headers: {
+          //     Authorization: `Bearer ${token}`,
+          //   },
+          // }
         );
 
         // console.log('countJobsUsingCompanyHRId :: response:', response.data.jobCount);

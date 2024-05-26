@@ -34,9 +34,9 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
         const response = await axios.get(
         `http://52.87.220.206:5000/api/auth/getJobDetailsUsingId/${jobid}`,
         {
-          headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-          },
+          // headers: {
+          // Authorization: `Bearer ${localStorage.getItem("token")}`,
+          // },
         }
         );
         if (response.status === 200) {
@@ -100,9 +100,9 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
         `http://52.87.220.206:5000/api/auth/editJob/${jobid}`,
         jobDetails,
         {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          }
+          // headers: {
+          //   Authorization: `Bearer ${token}`,
+          // }
         }
       );
       console.log("handleSaveClick :: response: ", response.data.data);

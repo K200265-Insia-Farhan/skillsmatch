@@ -55,9 +55,9 @@ const EmployJobItem = ({
         // Call the countApplicants API
         const response = await axios.get(`http://52.87.220.206:5000/api/auth/countApplicantsUsingJobId/${job_id}`,
           {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            }
+            // headers: {
+            //   Authorization: `Bearer ${token}`,
+            // }
           }
         );
 

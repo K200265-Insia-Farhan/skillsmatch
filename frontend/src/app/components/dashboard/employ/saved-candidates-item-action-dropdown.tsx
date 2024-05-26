@@ -34,9 +34,9 @@ const SavedCandidateItemActionDropDown = ({ candidate_id }) => {
           `http://52.87.220.206:5000/api/auth/unsaveCandidateWithoutJobId`,
           data,
           {
-            headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
+            // headers: {
+            // Authorization: `Bearer ${localStorage.getItem("token")}`,
+            // },
           }
         )
   
