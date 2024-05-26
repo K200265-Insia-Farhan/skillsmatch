@@ -25,7 +25,7 @@ const DashboardRecommendedCourses = ({ setIsOpenSidebar }: IProps) => {
   useEffect(() => {
     const getCandidateDetailsUsingEmail = async () => {
       try {
-        const response = await axios.get(`http://52.87.220.206:5000/api/auth/getCandidateDetailsUsingEmail/${localStorage.getItem("email")}`);
+        const response = await axios.get(`http://18.210.17.62:5000/api/auth/getCandidateDetailsUsingEmail/${localStorage.getItem("email")}`);
         console.log("Candidate details: ", response.data.data);
         if(response.status === 200){
           setUserDetails(response.data.data.company);

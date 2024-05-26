@@ -32,7 +32,7 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
       const getJobDetailsUsingId = async () => {
       try {
         const response = await axios.get(
-        `http://52.87.220.206:5000/api/auth/getJobDetailsUsingId/${jobid}`,
+        `http://18.210.17.62:5000/api/auth/getJobDetailsUsingId/${jobid}`,
         {
           // headers: {
           // Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -97,7 +97,7 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        `http://52.87.220.206:5000/api/auth/editJob/${jobid}`,
+        `http://18.210.17.62:5000/api/auth/editJob/${jobid}`,
         jobDetails,
         {
           // headers: {
