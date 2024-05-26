@@ -66,15 +66,15 @@ const SubmitJobArea = ({setIsOpenSidebar}:IProps) => {
     try {
 
       console.log("handleSaveClick :: jobDetails: ", jobDetails)
-      // const token = localStorage.getItem("token");
+      const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://18.210.17.62:5000/api/auth/submitJob",
+        "http://100.25.158.124:5000/api/auth/submitJob",
         jobDetails,
         {
-          // headers: {
-          //   Authorization: `Bearer ${token}`,
-          // }
+          headers: {
+            Authorization: `Bearer ${token}`,
+          }
         }
       );
       console.log("handleSaveClick :: response: ", response.data.data);

@@ -51,25 +51,25 @@ const SavedCandidateItem = ({ item }: { item: candidateDetails }) => {
   useEffect(() => {
     const fetchCandidateProfilePicture = async () => {
       try {
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
         const data = {
           candidate_id: item.candidate_id
         }
         const response = await axios.post(
-          'http://18.210.17.62:5000/api/auth/getCandidateProfilePicture',
+          'http://100.25.158.124:5000/api/auth/getCandidateProfilePicture',
           data,
-          // {
-          //   headers: {
-          //     Authorization: `Bearer ${token}`,
-          //   },
-          // }
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
 
         console.log('Profile Picture Path:', response.data.filePath);
 
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://52.87.220.206${response.data.filePath}`;
+          const fullUrl = `http://100.25.158.124:5000${response.data.filePath}`;
 
           console.log('saved-candidate-item :: Full URL:', fullUrl);
 

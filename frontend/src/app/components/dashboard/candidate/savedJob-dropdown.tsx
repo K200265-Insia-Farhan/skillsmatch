@@ -9,13 +9,13 @@ const ActionDropdown = ({ job_id, onUnsaveJob }) => {
       const token = localStorage.getItem("token") as string;
 
       const response = await axios.delete(
-        `http://18.210.17.62:5000/api/auth/unsaveJob`,
-        // {
-        //   headers: {
-        //     Authorization: `Bearer ${token}`,
-        //   },
-        //   data: { job_id: job_id }, // Send job_ids as data in the request body
-        // }
+        `http://100.25.158.124:5000/api/auth/unsaveJob`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          data: { job_id: job_id }, // Send job_ids as data in the request body
+        }
       );
 
       if (response.status === 200) {

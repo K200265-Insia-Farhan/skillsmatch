@@ -33,12 +33,12 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://18.210.17.62:5000/api/auth/saveCompanyDetails",
+        "http://100.25.158.124:5000/api/auth/saveCompanyDetails",
         companyDetails,
         {
-          // headers: {
-          //   Authorization: `Bearer ${token}`,
-          // },
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
       if (response.status === 200) {
@@ -87,7 +87,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://18.210.17.62:5000/api/auth/companyDetails",
+          "http://100.25.158.124:5000/api/auth/companyDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -110,9 +110,9 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
   useEffect(()=> {
     const fetchCompanyProfilePicture = async () => {
       try {
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://18.210.17.62:5000/api/auth/getCompanyProfilePicture',
+          'http://100.25.158.124:5000/api/auth/getCompanyProfilePicture',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -124,7 +124,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
         if(response.status === 200){
           // construct the full url based on relative path
-          const fullUrl = `http://52.87.220.206/${response.data.filePath}`;
+          const fullUrl = `http://100.25.158.124:5000/${response.data.filePath}`;
 
           console.log("fetchCompanyProfilePicture :: fullUrl: ", fullUrl)
 
@@ -146,7 +146,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
     if(file){
       try{
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
 
         // create a formData object to send the file
         const formData = new FormData();
@@ -154,7 +154,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
         // send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://18.210.17.62:5000/api/auth/uploadCompanyProfilePicture',
+          'http://100.25.158.124:5000/api/auth/uploadCompanyProfilePicture',
           formData,
           {
             headers: {

@@ -32,11 +32,11 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
       const getJobDetailsUsingId = async () => {
       try {
         const response = await axios.get(
-        `http://18.210.17.62:5000/api/auth/getJobDetailsUsingId/${jobid}`,
+        `http://100.25.158.124:5000/api/auth/getJobDetailsUsingId/${jobid}`,
         {
-          // headers: {
-          // Authorization: `Bearer ${localStorage.getItem("token")}`,
-          // },
+          headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
         }
         );
         if (response.status === 200) {
@@ -97,12 +97,12 @@ const EditJobArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        `http://18.210.17.62:5000/api/auth/editJob/${jobid}`,
+        `http://100.25.158.124:5000/api/auth/editJob/${jobid}`,
         jobDetails,
         {
-          // headers: {
-          //   Authorization: `Bearer ${token}`,
-          // }
+          headers: {
+            Authorization: `Bearer ${token}`,
+          }
         }
       );
       console.log("handleSaveClick :: response: ", response.data.data);

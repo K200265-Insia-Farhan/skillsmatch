@@ -63,7 +63,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
 	try {
 	  if (jobData.companyHR_id) {
 		const response = await axios.get(
-		  `http://18.210.17.62:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
+		  `http://100.25.158.124:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
 		  {
 			  headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -89,7 +89,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
   const fetchProfilePicture = async (companyhrid: number) => {
 	try {
 	  const response = await axios.get(
-		`http://18.210.17.62:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
+		`http://100.25.158.124:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
 		{
 		  headers: {
 			Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -106,7 +106,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
 
 	  if (response.status === 200) {
 		// construct full url based on relative path
-		const fullUrl = `http://52.87.220.206/${response.data.data.filePath}`;
+		const fullUrl = `http://100.25.158.124:5000/${response.data.data.filePath}`;
 
 		// set profile picture
 		setProfilePicture(fullUrl);
@@ -124,7 +124,7 @@ useEffect(() => {
     const getJobDetailsUsingId = async () => {
 		try {
 		  const response = await axios.get(
-			`http://18.210.17.62:5000/api/auth/getJobDetailsUsingId/${job_id}`,
+			`http://100.25.158.124:5000/api/auth/getJobDetailsUsingId/${job_id}`,
 			{
 			  headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -170,12 +170,12 @@ const handleApplyNowClick = async () => {
 
     try{
       const response = await axios.post(
-			`http://18.210.17.62:5000/api/auth/applyJob`,
+			`http://100.25.158.124:5000/api/auth/applyJob`,
       data,
 			{
-			  // headers: {
-				// Authorization: `Bearer ${localStorage.getItem("token")}`,
-			  // },
+			  headers: {
+				Authorization: `Bearer ${localStorage.getItem("token")}`,
+			  },
 			});
 
       // console.log("job-details-v1-area :: handleApplyNowClick :: response leone pessi: ", response);
@@ -210,7 +210,7 @@ const handleApplyNowClick = async () => {
 // useEffect(() => {
 //   const getRecommendedCandidates = async () => {
 //     try {
-//       const response = await axios.get(`http://localhost:2004/recommend_candidates/${job_id}`);
+//       const response = await axios.get(`http://100.25.158.124:2004/recommend_candidates/${job_id}`);
 //       if(response){
 //         console.log("Recommended candidates: ", response.data);
 //         setRecommendedCandidates(response.data);

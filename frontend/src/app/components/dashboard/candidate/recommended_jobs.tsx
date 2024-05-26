@@ -27,7 +27,7 @@ const CandidateRecommendedJobs = ({ setIsOpenSidebar }: IProps) => {
   useEffect(() => {
     const getRecommendations = async () => {
       try {
-        const response = await axios.get(`http://localhost:2003/recommend_jobs/${localStorage.getItem("candidate_id")}`);
+        const response = await axios.get(`http://100.25.158.124:2003/recommend_jobs/${localStorage.getItem("candidate_id")}`);
         console.log("Candidate details: ", response.data.recommended_jobs);
         console.log("candidate id is"+localStorage.getItem("candidate_id"))
         if (response.status === 200) {

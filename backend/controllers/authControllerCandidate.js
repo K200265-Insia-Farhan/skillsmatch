@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-// const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 
 const { Candidate, Institute, WorkExperience, Jobs, AppliedJobs, SavedJobs, Company_HR } = require("../models");
 
@@ -115,22 +115,22 @@ loginCandidate(req, res) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    // const token = jwt.sign(
-    //   {
-    //     id: candidate.candidate_id,
-    //     email: candidate.email,
-    //     firstname: candidate.firstname,
-    //     lastname: candidate.lastname,
-    //     role: "candidate",
-    //   },
-    //   process.env.JWT_SECRET,
-    //   { expiresIn: "1d" }
-    // );
+    const token = jwt.sign(
+      {
+        id: candidate.candidate_id,
+        email: candidate.email,
+        firstname: candidate.firstname,
+        lastname: candidate.lastname,
+        role: "candidate",
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: "1d" }
+    );
 
-    // console.log(token);
+    console.log(token);
     res.status(200).json({
       message: "candidate logged in successfully",
-      // token,
+      token,
       id: candidate.candidate_id,
       firstname: candidate.firstname,
       lastname: candidate.lastname,

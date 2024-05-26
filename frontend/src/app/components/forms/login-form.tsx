@@ -53,12 +53,12 @@ const LoginForm = () => {
   // on submit
   const onSubmit = async (data: IFormData) => {
     try {
-      const response = await axios.post("http://18.210.17.62:5000/api/auth/loginCandidate", data);
-      // const { token } = await response.data;
+      const response = await axios.post("http://100.25.158.124:5000/api/auth/loginCandidate", data);
+      const { token } = await response.data;
       if (response) {
         alert("Logged in successfully!");
         console.log(response.data);
-        // localStorage.setItem("token", token);
+        localStorage.setItem("token", token);
         
         localStorage.setItem("email", data.email); 
         console.log("email is"+data.email+"emailed"+data["email"]+"local"+localStorage.getItem("email"));

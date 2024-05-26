@@ -16,19 +16,19 @@ const ActionDropdown = ({ job_id, companyHR_id }) => {
 
   const saveJob = async() => {
     try{
-      // const token = localStorage.getItem("token") as string;
-      // const decoded = jwtDecode(token);
-      // const id = decoded.id;
+      const token = localStorage.getItem("token") as string;
+      const decoded = jwtDecode(token);
+      const id = decoded.id;
 
       const data = {
         job_id: job_id,
         candidate_id: id,
         companyHR_id: companyHR_id
       }
-      const response = await axios.post(`http://18.210.17.62:5000/api/auth/saveJob`,data,{
-        // headers: {
-        //   Authorization: `Bearer ${token}`,
-        // },
+      const response = await axios.post(`http://100.25.158.124:5000/api/auth/saveJob`,data,{
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
       console.log("Response from api: ",response);
 

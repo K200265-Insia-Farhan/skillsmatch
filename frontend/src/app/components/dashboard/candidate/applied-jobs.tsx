@@ -18,15 +18,15 @@ const AppliedJobsArea = ({setIsOpenSidebar}:IProps) => {
   const [appliedJobs, setAppliedJobs] = useState([]);
 
   // extract id from jwt token
-  // const token = localStorage.getItem("token") as string;
-  // const decoded = jwtDecode(token);
-  const id = localStorage.getItem("candidate_id");
+  const token = localStorage.getItem("token") as string;
+  const decoded = jwtDecode(token);
+  const id = decoded.id;
   console.log("user id: ", id);
 
   const fetchAppliedJobs = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get(`http://18.210.17.62:5000/api/auth/getJobDetailsUsingCandidateId/$}`,{
+      const response = await axios.get(`http://100.25.158.124:5000/api/auth/getJobDetailsUsingCandidateId/${id}`,{
         headers: {
           Authorization: `Bearer ${token}`,
         },

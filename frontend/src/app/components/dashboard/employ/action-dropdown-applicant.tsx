@@ -44,12 +44,12 @@ const ActionDropdownApplicant = ({ candidate_id }) => {
 
 
       const response = await axios.post(
-        `http://18.210.17.62:5000/api/auth/saveCandidate`,
+        `http://100.25.158.124:5000/api/auth/saveCandidate`,
         data,
         {
-          // headers: {
-          // Authorization: `Bearer ${localStorage.getItem("token")}`,
-          // },
+          headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
         }
       )
 
@@ -79,12 +79,12 @@ const ActionDropdownApplicant = ({ candidate_id }) => {
         console.log("action-dropdown-applicant.tsx :: unsaveCandidate :: data: ", data);
   
         const response = await axios.post(
-          `http://18.210.17.62:5000/api/auth/unsaveCandidate`,
+          `http://100.25.158.124:5000/api/auth/unsaveCandidate`,
           data,
           {
-            // headers: {
-            // Authorization: `Bearer ${localStorage.getItem("token")}`,
-            // },
+            headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
           }
         )
   
@@ -120,12 +120,12 @@ const ActionDropdownApplicant = ({ candidate_id }) => {
         console.log("action-dropdown-applicant.tsx :: checkIfCandidateSaved :: candidate_id: ", candidate_id);
 
         const response = await axios.post(
-          `http://18.210.17.62:5000/api/auth/isCandidateSaved`,
+          `http://100.25.158.124:5000/api/auth/isCandidateSaved`,
           data,
           {
-            // headers: {
-            //   Authorization: `Bearer ${localStorage.getItem("token")}`,
-            // },
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
           }
         );
 

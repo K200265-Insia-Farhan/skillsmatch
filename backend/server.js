@@ -5,7 +5,7 @@ const cors = require('cors');
 const path = require('path');
 
 const corsOptions = {
-  origin: 'http://52.87.220.206:3000',
+  origin: 'http://100.25.158.124:3000',
   credentials: true,
 };
 

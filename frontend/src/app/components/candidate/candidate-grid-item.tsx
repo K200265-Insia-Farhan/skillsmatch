@@ -32,11 +32,11 @@ const CandidateGridItem = ({ item, style_2 = false }: { item: CandidateModel; st
   useEffect(() => {
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get(`http://18.210.17.62:5000/api/auth/getProfilePictureUsingId/${item.candidate_id}`);
+        const response = await axios.get(`http://100.25.158.124:5000/api/auth/getProfilePictureUsingId/${item.candidate_id}`);
         console.log("Response: ", response.data.data.filePath);
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://52.87.220.206${response.data.data.filePath}`;
+          const fullUrl = `http://100.25.158.124:5000${response.data.data.filePath}`;
              
           // Update the profile picture state with the full URL
           setProfilePicture(fullUrl);

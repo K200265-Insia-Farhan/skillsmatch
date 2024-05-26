@@ -138,16 +138,19 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     if (role === 'candidate') {
       localStorage.removeItem('tokenA');
       localStorage.removeItem('roleC');
-      window.location.href = 'http://52.87.220.206:3000';
+      window.location.href = 'http://100.25.158.124:3000';
     }
   }
   
   useEffect(() => {
     const getUserDetails = async () => {
       try {
-       //const token = localStorage.getItem('token');
-        const response = await axios.get('http://18.210.17.62:5000/api/auth/candidateDetails'
-      );
+        const token = localStorage.getItem('token');
+        const response = await axios.get('http://100.25.158.124:5000/api/auth/candidateDetails', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
 
         if (response.status === 200) {
           const { firstname, lastname } = response.data.data.candidate;
@@ -161,17 +164,21 @@ const CandidateAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
 
     const fetchProfilePicture = async () => {
       try {
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://18.210.17.62:5000/api/auth/getProfilePicture',
-         
+          'http://100.25.158.124:5000/api/auth/getProfilePicture',
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
 
         // console.log('Profile Picture Path:', response.data.filePath);
 
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://52.87.220.206${response.data.filePath}`;
+          const fullUrl = `http://100.25.158.124:5000${response.data.filePath}`;
 
           // Update the profile picture state with the full URL
           setProfilePicture(fullUrl);

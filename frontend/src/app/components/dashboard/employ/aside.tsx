@@ -117,18 +117,18 @@ const EmployAside = ({isOpenSidebar,setIsOpenSidebar}:IProps) => {
     if (role === 'companyHR') {
       localStorage.removeItem('tokenHR');
       localStorage.removeItem('roleHR');
-      window.location.href = 'http://52.87.220.206:3000';
+      window.location.href = 'http://100.25.158.124:3000';
     }
   }
 
   useEffect(() => {
     const getCompanyHRDetails = async () => {
       try {
-       //const token = localStorage.getItem('token');
-        const response = await axios.get('http://18.210.17.62:5000/api/auth/companyHRDetails', {
-          // headers: {
-          //   Authorization: `Bearer ${token}`,
-          // },
+        const token = localStorage.getItem('token');
+        const response = await axios.get('http://100.25.158.124:5000/api/auth/companyHRDetails', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         });
 
         // console.log('Company HR details:', response.data);

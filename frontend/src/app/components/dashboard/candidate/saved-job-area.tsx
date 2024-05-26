@@ -18,12 +18,12 @@ const SavedJobArea = ({ setIsOpenSidebar }: IProps) => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `http://18.210.17.62:5000/api/auth/getAllSavedJobs`,
-          // {
-          //   headers: {
-          //     Authorization: `Bearer ${token}`,
-          //   },
-          // }
+          `http://100.25.158.124:5000/api/auth/getAllSavedJobs`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
         setSavedJobs(response.data.data.savedJobs);
       } catch (error) {
@@ -40,12 +40,12 @@ const SavedJobArea = ({ setIsOpenSidebar }: IProps) => {
         try {
           const token = localStorage.getItem("token");
           const response = await axios.get(
-            `http://18.210.17.62:5000/api/auth/getJobDetailsUsingSavedJobs/${savedJob.job_id}`,
-            // {
-            //   headers: {
-            //     Authorization: `Bearer ${token}`,
-            //   },
-            // }
+            `http://100.25.158.124:5000/api/auth/getJobDetailsUsingSavedJobs/${savedJob.job_id}`,
+            {
+              headers: {
+                Authorization: `Bearer ${token}`,
+              },
+            }
           );
           return response.data.data.jobs[0];
         } catch (error) {

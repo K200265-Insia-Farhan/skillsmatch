@@ -53,11 +53,11 @@ const AppliedCandidatesArea = ({setIsOpenSidebar}:IProps) => {
       const getapplicants = async () => {
         try {
           const response = await axios.get(
-            `http://18.210.17.62:5000/api/auth/getApplicantsUsingJobId/${job_id}`,
+            `http://100.25.158.124:5000/api/auth/getApplicantsUsingJobId/${job_id}`,
             {
-              // headers: {
-              // Authorization: `Bearer ${localStorage.getItem("token")}`,
-              // },
+              headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+              },
             }
             );
 

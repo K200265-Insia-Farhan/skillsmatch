@@ -31,12 +31,12 @@ const SavedCandidateItemActionDropDown = ({ candidate_id }) => {
         console.log("action-dropdown-applicant.tsx :: unsaveCandidate :: data: ", data);
   
         const response = await axios.post(
-          `http://18.210.17.62:5000/api/auth/unsaveCandidateWithoutJobId`,
+          `http://100.25.158.124:5000/api/auth/unsaveCandidateWithoutJobId`,
           data,
           {
-            // headers: {
-            // Authorization: `Bearer ${localStorage.getItem("token")}`,
-            // },
+            headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
           }
         )
   

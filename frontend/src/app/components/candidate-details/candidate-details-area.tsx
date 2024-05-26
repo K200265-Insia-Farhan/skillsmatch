@@ -29,7 +29,7 @@ const CandidateDetailsArea = () => {
   const handleDownloadCV = async () => {
     try {
       // Get the id from search params
-     //const token = localStorage.getItem('token');
+      const token = localStorage.getItem('token');
 
       if (!id) {
         console.error("Candidate id not found in search params");
@@ -37,13 +37,13 @@ const CandidateDetailsArea = () => {
       }
 
       // Make a GET request to the /getResume API endpoint
-      const response = await axios.get(`http://18.210.17.62:5000/api/auth/getResume?id=${id}`,{
-        // headers: {
-        //   // Authorization: `Bearer ${token}`
-        // }
+      const response = await axios.get(`http://100.25.158.124:5000/api/auth/getResume?id=${id}`,{
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
       });
 
-      const newPath = "http://52.87.220.206" + response.data.filePath;
+      const newPath = "http://100.25.158.124:5000" + response.data.filePath;
 
       if (response.status === 200) {
         // Update the state with the resume path received from the API
@@ -58,7 +58,7 @@ const CandidateDetailsArea = () => {
   useEffect(() => {
     const getCandidateDetailsUsingId = async () => {
       try {
-        const response = await axios.get(`http://18.210.17.62:5000/api/auth/getCandidateDetailsUsingId/${id}`);
+        const response = await axios.get(`http://100.25.158.124:5000/api/auth/getCandidateDetailsUsingId/${id}`);
         console.log("Candidate details: ", response.data.data);
         if(response.status === 200){
           setUserDetails(response.data.data.candidate);
@@ -76,11 +76,11 @@ const CandidateDetailsArea = () => {
 
     const fetchProfilePicture = async () => {
       try {
-        const response = await axios.get(`http://18.210.17.62:5000/api/auth/getProfilePictureUsingId/${id}`);
+        const response = await axios.get(`http://100.25.158.124:5000/api/auth/getProfilePictureUsingId/${id}`);
         console.log("Response: ", response.data.data.filePath);
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://52.87.220.206${response.data.data.filePath}`;
+          const fullUrl = `http://100.25.158.124:5000${response.data.data.filePath}`;
 
           // Update the profile picture state with the full URL
           setProfilePicture(fullUrl);

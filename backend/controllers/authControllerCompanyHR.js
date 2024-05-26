@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-// const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 const { Company_HR, AppliedJobs, Candidate } = require('../models');
 const { Company, SavedCandidates } = require("../models");
 const dotenv = require('dotenv');
@@ -48,10 +48,10 @@ async function loginCompanyHR(req, res) {
             return res.status(401).json({ message: 'Invalid credentials' });
         }
     
-        // const token = jwt.sign({ id:CompanyHR.companyHR_id, email: CompanyHR.email, firstname: CompanyHR.firstname, lastname: CompanyHR.lastname, role: "companyHR" }, process.env.JWT_SECRET, { expiresIn: '1d' });
+        const token = jwt.sign({ id:CompanyHR.companyHR_id, email: CompanyHR.email, firstname: CompanyHR.firstname, lastname: CompanyHR.lastname, role: "companyHR" }, process.env.JWT_SECRET, { expiresIn: '1d' });
 
-        // console.log(token);
-        res.status(200).json({ message: 'Company_HR logged in successfully',id: CompanyHR.companyHR_id ,firstname: CompanyHR.firstname, lastname: CompanyHR.lastname, role: "companyHR" });
+        console.log(token);
+        res.status(200).json({ message: 'Company_HR logged in successfully', token, id: CompanyHR.companyHR_id ,firstname: CompanyHR.firstname, lastname: CompanyHR.lastname, role: "companyHR" });
     } catch (error) {
         console.log(error);
         res.status(500).json({ message: 'Incorrect email or password!' });

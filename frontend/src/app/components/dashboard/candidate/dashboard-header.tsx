@@ -92,7 +92,7 @@ const DashboardHeader = ({setIsOpenSidebar}:IProps) => {
         </div> */}
         <div>
           <Link
-            href="http://52.87.220.206:3000"
+            href="http://100.25.158.124:3000"
             className="job-post-btn tran3s"
           >
             Homepage

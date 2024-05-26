@@ -43,30 +43,30 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       try {
         const token = localStorage.getItem("token");
         const responseCandidate = await axios.get(
-          "http://18.210.17.62:5000/api/auth/candidateDetails",
-          // {
-          //   headers: {
-          //     Authorization: `Bearer ${token}`,
-          //   },
-          // }
+          "http://100.25.158.124:5000/api/auth/candidateDetails",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
 
         const responseInstitute = await axios.get(
-          "http://18.210.17.62:5000/api/auth/getInstituteDetails",
-          // {
-          //   headers: {
-          //     Authorization: `Bearer ${token}`,
-          //   },
-          // }
+          "http://100.25.158.124:5000/api/auth/getInstituteDetails",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         )
 
         const responseWorkExperience = await axios.get(
-          "http://18.210.17.62:5000/api/auth/getWorkExperienceDetails",
-          // {
-          //   headers: {
-          //     Authorization: `Bearer ${token}`,
-          //   },
-          // }
+          "http://100.25.158.124:5000/api/auth/getWorkExperienceDetails",
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         )
 
         if (responseCandidate.status === 200 && responseInstitute.status === 200 && responseWorkExperience.status === 200) {
@@ -87,21 +87,21 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
   useEffect(() => {
     const fetchProfilePicture = async () => {
       try {
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://18.210.17.62:5000/api/auth/getProfilePicture',
-          // {
-          //   headers: {
-          //     Authorization: `Bearer ${token}`,
-          //   },
-          // }
+          'http://100.25.158.124:5000/api/auth/getProfilePicture',
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
 
         console.log('Profile Picture Path:', response.data.filePath);
 
         if (response.status === 200) {
           // Construct the full URL based on the relative path
-          const fullUrl = `http://52.87.220.206${response.data.filePath}`;
+          const fullUrl = `http://100.25.158.124:5000${response.data.filePath}`;
 
           // Update the profile picture state with the full URL
           setProfilePicture(fullUrl);
@@ -123,13 +123,11 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.put("http://18.210.17.62:5000/api/auth/updateCandidateDetails", userDetails,
-      //  {
-      //   headers: {
-      //     Authorization: `Bearer ${token}`,
-      //   },
-      // }
-    );
+      const response = await axios.put("http://100.25.158.124:5000/api/auth/updateCandidateDetails", userDetails, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (response.status === 200) {
         setUserDetails(response.data.data.candidate);
@@ -140,13 +138,11 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
       setEducationDetails([]);
 
-      const createEducationResponse = await axios.post("http://18.210.17.62:5000/api/auth/createCandidateEducationDetails", educationDetails,
-      //  {
-      //   headers: {
-      //     Authorization: `Bearer ${token}`,
-      //   },
-      // }
-    );
+      const createEducationResponse = await axios.post("http://100.25.158.124:5000/api/auth/createCandidateEducationDetails", educationDetails, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (createEducationResponse.status === 200) {
         console.log("Education details saved successfully");
@@ -157,13 +153,11 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
       setWorkExperience([]);
 
-      const createWorkExperienceResponse = await axios.post("http://18.210.17.62:5000/api/auth/createCandidateWorkExperience", workExperience,
-      //  {
-      //   headers: {
-      //     Authorization: `Bearer ${token}`,
-      //   },
-      // }
-    );
+      const createWorkExperienceResponse = await axios.post("http://100.25.158.124:5000/api/auth/createCandidateWorkExperience", workExperience, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (createWorkExperienceResponse.status === 200) {
         console.log("Work Experience details saved successfully");
@@ -224,7 +218,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
     if (file) {
       try {
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
 
         // Create a FormData object to send the file
         const formData = new FormData();
@@ -232,13 +226,13 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         // Send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://18.210.17.62:5000/api/auth/uploadProfilePicture',
+          'http://100.25.158.124:5000/api/auth/uploadProfilePicture',
           formData,
           {
-            // headers: {
-            //   Authorization: `Bearer ${token}`,
-            //   'Content-Type': 'multipart/form-data',
-            // },
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'multipart/form-data',
+            },
           }
         );
 
@@ -289,7 +283,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
     if (file) {
       try {
-       //const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token');
 
         // Create a FormData object to send the file
         const formData = new FormData();
@@ -299,13 +293,13 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         // Send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://18.210.17.62:5000/api/auth/uploadResume',
+          'http://100.25.158.124:5000/api/auth/uploadResume',
           formData,
           {
-            // headers: {
-            //   Authorization: `Bearer ${token}`,
-            //   'Content-Type': 'multipart/form-data',
-            // },
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'multipart/form-data',
+            },
           }
         );
 
@@ -333,13 +327,13 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       }
 
       // Make a GET request to the /getResume API endpoint
-      const response = await axios.get(`http://18.210.17.62:5000/api/auth/getResume?id=${id}`,{
-        // headers: {
-        //   Authorization: `Bearer ${token}`
-        // }
+      const response = await axios.get(`http://100.25.158.124:5000/api/auth/getResume?id=${id}`,{
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
       });
 
-      const newPath = "http://52.87.220.206" + response.data.filePath;
+      const newPath = "http://100.25.158.124:5000" + response.data.filePath;
 
       if (response.status === 200) {
         // Update the state with the resume path received from the API
