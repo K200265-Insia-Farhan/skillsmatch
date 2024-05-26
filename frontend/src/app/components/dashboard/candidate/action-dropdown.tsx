@@ -18,7 +18,7 @@ const ActionDropdown = ({ job_id }) => {
       // console.log("delete job called:: job_id: ", job_id)
       // const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `http://18.210.17.62:5000/api/auth/deleteJobUsingId/${job_id}`,
+        `http://52.87.220.206:5000/api/auth/deleteJobUsingId/${job_id}`,
         // {
         //   headers: {
         //     Authorization: `Bearer ${token}`,

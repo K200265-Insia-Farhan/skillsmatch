@@ -33,7 +33,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       const token = localStorage.getItem("token");
 
       const response = await axios.put(
-        "http://18.210.17.62:5000/api/auth/saveCompanyDetails",
+        "http://52.87.220.206:5000/api/auth/saveCompanyDetails",
         companyDetails,
         {
           // headers: {
@@ -87,7 +87,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://18.210.17.62:5000/api/auth/companyDetails",
+          "http://52.87.220.206:5000/api/auth/companyDetails",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -112,7 +112,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
       try {
        //const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://18.210.17.62:5000/api/auth/getCompanyProfilePicture',
+          'http://52.87.220.206:5000/api/auth/getCompanyProfilePicture',
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -154,7 +154,7 @@ const EmployProfileArea = ({setIsOpenSidebar}:IProps) => {
 
         // send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://18.210.17.62:5000/api/auth/uploadCompanyProfilePicture',
+          'http://52.87.220.206:5000/api/auth/uploadCompanyProfilePicture',
           formData,
           {
             headers: {

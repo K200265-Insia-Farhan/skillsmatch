@@ -16,7 +16,7 @@ const CandidateV1Area = ({style_2=false}:{style_2?:boolean}) => {
     const getAllCandidates = async () => {
       try{
         const response = await axios.get(
-          "http://18.210.17.62:5000/api/auth/getAllCandidates",
+          "http://52.87.220.206:5000/api/auth/getAllCandidates",
         );
         if(response.status == 200){
           setCandidateData(response.data.data.candidates);

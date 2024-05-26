@@ -35,7 +35,7 @@ const OpenPosition = () => {
       try {
         // const token = localStorage.getItem("token");
         const response = await axios.get(
-          `http://18.210.17.62:5000/api/auth/getJobsByCompanyHRId/${companyHR_id}`,
+          `http://52.87.220.206:5000/api/auth/getJobsByCompanyHRId/${companyHR_id}`,
           // {
           //   headers: {
           //     Authorization: `Bearer ${token}`,

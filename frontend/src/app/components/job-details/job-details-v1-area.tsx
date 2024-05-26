@@ -63,7 +63,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
 	try {
 	  if (jobData.companyHR_id) {
 		const response = await axios.get(
-		  `http://18.210.17.62:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
+		  `http://52.87.220.206:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
 		  {
 			  headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -89,7 +89,7 @@ const JobDetailsV1Area = ({ job }: { job: IJobType }) => {
   const fetchProfilePicture = async (companyhrid: number) => {
 	try {
 	  const response = await axios.get(
-		`http://18.210.17.62:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
+		`http://52.87.220.206:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
 		{
 		  headers: {
 			Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -124,7 +124,7 @@ useEffect(() => {
     const getJobDetailsUsingId = async () => {
 		try {
 		  const response = await axios.get(
-			`http://18.210.17.62:5000/api/auth/getJobDetailsUsingId/${job_id}`,
+			`http://52.87.220.206:5000/api/auth/getJobDetailsUsingId/${job_id}`,
 			{
 			  headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -170,7 +170,7 @@ const handleApplyNowClick = async () => {
 
     try{
       const response = await axios.post(
-			`http://18.210.17.62:5000/api/auth/applyJob`,
+			`http://52.87.220.206:5000/api/auth/applyJob`,
       data,
 			{
 			  // headers: {

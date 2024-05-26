@@ -121,7 +121,7 @@ const SavedCandidateArea = ({setIsOpenSidebar}:IProps) => {
             try {
                 // Make the HTTP GET request to the API endpoint
                 const response = await axios.get(
-                    `http://18.210.17.62:5000/api/auth/getSavedCandidatesUsingcompanyhrId/${company_hr_id}`,
+                    `http://52.87.220.206:5000/api/auth/getSavedCandidatesUsingcompanyhrId/${company_hr_id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -26,7 +26,7 @@ const AppliedJobsArea = ({setIsOpenSidebar}:IProps) => {
   const fetchAppliedJobs = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get(`http://18.210.17.62:5000/api/auth/getJobDetailsUsingCandidateId/$}`,{
+      const response = await axios.get(`http://52.87.220.206:5000/api/auth/getJobDetailsUsingCandidateId/$}`,{
         headers: {
           Authorization: `Bearer ${token}`,
         },

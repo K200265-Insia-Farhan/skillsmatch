@@ -36,7 +36,7 @@ const EmployJobArea = ({setIsOpenSidebar}:IProps) => {
     const getJobsbyCompanyHR = async () => {
       try {
         const response = await axios.get(
-          'http://18.210.17.62:5000/api/auth/getJobsbyCompanyHR',
+          'http://52.87.220.206:5000/api/auth/getJobsbyCompanyHR',
           {
             // headers: {
             //   Authorization: `Bearer ${localStorage.getItem('token')}`

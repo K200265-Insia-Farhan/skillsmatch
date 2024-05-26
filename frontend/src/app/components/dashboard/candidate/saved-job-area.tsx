@@ -18,7 +18,7 @@ const SavedJobArea = ({ setIsOpenSidebar }: IProps) => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `http://18.210.17.62:5000/api/auth/getAllSavedJobs`,
+          `http://52.87.220.206:5000/api/auth/getAllSavedJobs`,
           // {
           //   headers: {
           //     Authorization: `Bearer ${token}`,
@@ -40,7 +40,7 @@ const SavedJobArea = ({ setIsOpenSidebar }: IProps) => {
         try {
           const token = localStorage.getItem("token");
           const response = await axios.get(
-            `http://18.210.17.62:5000/api/auth/getJobDetailsUsingSavedJobs/${savedJob.job_id}`,
+            `http://52.87.220.206:5000/api/auth/getJobDetailsUsingSavedJobs/${savedJob.job_id}`,
             // {
             //   headers: {
             //     Authorization: `Bearer ${token}`,

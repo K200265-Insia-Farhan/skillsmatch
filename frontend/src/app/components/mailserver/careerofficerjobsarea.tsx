@@ -62,7 +62,7 @@
 // 	try {
 // 	  if (jobData.companyHR_id) {
 // 		const response = await axios.get(
-// 		  `http://18.210.17.62:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
+// 		  `http://52.87.220.206:5000/api/auth/getCompanyDetailsUsingId/${companyhrid}`,
 // 		  {
 // 			  headers: {
 // 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -88,7 +88,7 @@
 //   const fetchProfilePicture = async (companyhrid: number) => {
 // 	try {
 // 	  const response = await axios.get(
-// 		`http://18.210.17.62:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
+// 		`http://52.87.220.206:5000/api/auth/getCompanyProfilePictureUsingId/${companyhrid}`,
 // 		{
 // 		  headers: {
 // 			Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -123,7 +123,7 @@
 //     const getJobDetailsUsingId = async () => {
 // 		try {
 // 		  const response = await axios.get(
-// 			`http://18.210.17.62:5000/api/auth/getJobDetailsUsingId/${job_id}`,
+// 			`http://52.87.220.206:5000/api/auth/getJobDetailsUsingId/${job_id}`,
 // 			{
 // 			  headers: {
 // 				Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -169,7 +169,7 @@
 
 //     try{
 //       const response = await axios.post(
-// 			`http://18.210.17.62:5000/api/auth/applyJob`,
+// 			`http://52.87.220.206:5000/api/auth/applyJob`,
 //       data,
 // 			{
 // 			  headers: {
@@ -442,7 +442,7 @@
 //     const fetchCareerOfficersJobs = async () => {
 //       try {
 //         const response = await axios.get(
-//           "http://18.210.17.62:5000/api/auth/getJobsByCareerOfficers",
+//           "http://52.87.220.206:5000/api/auth/getJobsByCareerOfficers",
 //           {
 //             headers: {
 //               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -514,7 +514,7 @@ const CareerOfficerJobsArea = ({ job }: { job: IJobType }) => {
     const fetchCareerOfficersJobs = async () => {
       try {
         const response = await axios.get(
-          "http://18.210.17.62:5000/api/auth/getJobsByCareerOfficers",
+          "http://52.87.220.206:5000/api/auth/getJobsByCareerOfficers",
           // {
           //   headers: {
           //     Authorization: `Bearer ${localStorage.getItem("token")}`,

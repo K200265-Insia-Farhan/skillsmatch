@@ -43,7 +43,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       try {
         const token = localStorage.getItem("token");
         const responseCandidate = await axios.get(
-          "http://18.210.17.62:5000/api/auth/candidateDetails",
+          "http://52.87.220.206:5000/api/auth/candidateDetails",
           // {
           //   headers: {
           //     Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
         );
 
         const responseInstitute = await axios.get(
-          "http://18.210.17.62:5000/api/auth/getInstituteDetails",
+          "http://52.87.220.206:5000/api/auth/getInstituteDetails",
           // {
           //   headers: {
           //     Authorization: `Bearer ${token}`,
@@ -61,7 +61,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
         )
 
         const responseWorkExperience = await axios.get(
-          "http://18.210.17.62:5000/api/auth/getWorkExperienceDetails",
+          "http://52.87.220.206:5000/api/auth/getWorkExperienceDetails",
           // {
           //   headers: {
           //     Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       try {
        //const token = localStorage.getItem('token');
         const response = await axios.get(
-          'http://18.210.17.62:5000/api/auth/getProfilePicture',
+          'http://52.87.220.206:5000/api/auth/getProfilePicture',
           // {
           //   headers: {
           //     Authorization: `Bearer ${token}`,
@@ -123,7 +123,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.put("http://18.210.17.62:5000/api/auth/updateCandidateDetails", userDetails,
+      const response = await axios.put("http://52.87.220.206:5000/api/auth/updateCandidateDetails", userDetails,
       //  {
       //   headers: {
       //     Authorization: `Bearer ${token}`,
@@ -140,7 +140,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
       setEducationDetails([]);
 
-      const createEducationResponse = await axios.post("http://18.210.17.62:5000/api/auth/createCandidateEducationDetails", educationDetails,
+      const createEducationResponse = await axios.post("http://52.87.220.206:5000/api/auth/createCandidateEducationDetails", educationDetails,
       //  {
       //   headers: {
       //     Authorization: `Bearer ${token}`,
@@ -157,7 +157,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
       setWorkExperience([]);
 
-      const createWorkExperienceResponse = await axios.post("http://18.210.17.62:5000/api/auth/createCandidateWorkExperience", workExperience,
+      const createWorkExperienceResponse = await axios.post("http://52.87.220.206:5000/api/auth/createCandidateWorkExperience", workExperience,
       //  {
       //   headers: {
       //     Authorization: `Bearer ${token}`,
@@ -232,7 +232,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         // Send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://18.210.17.62:5000/api/auth/uploadProfilePicture',
+          'http://52.87.220.206:5000/api/auth/uploadProfilePicture',
           formData,
           {
             // headers: {
@@ -299,7 +299,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
 
         // Send the file to the upload endpoint
         const uploadResponse = await axios.post(
-          'http://18.210.17.62:5000/api/auth/uploadResume',
+          'http://52.87.220.206:5000/api/auth/uploadResume',
           formData,
           {
             // headers: {
@@ -333,7 +333,7 @@ const DashboardProfileArea = ({ setIsOpenSidebar }: IProps) => {
       }
 
       // Make a GET request to the /getResume API endpoint
-      const response = await axios.get(`http://18.210.17.62:5000/api/auth/getResume?id=${id}`,{
+      const response = await axios.get(`http://52.87.220.206:5000/api/auth/getResume?id=${id}`,{
         // headers: {
         //   Authorization: `Bearer ${token}`
         // }
